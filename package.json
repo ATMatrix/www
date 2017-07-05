@@ -1,0 +1,41 @@
+{
+  "name": "atmatrix-www",
+  "version": "0.0.1",
+  "description": "Official Website for ATMatrix.org",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_ENV=development webpack-dev-server",
+    "build": "NODE_ENV=production webpack --progress --display-error-details --colors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ATMatrix/www.git"
+  },
+  "author": "boombastic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ATMatrix/www/issues"
+  },
+  "homepage": "https://github.com/ATMatrix/www#readme",
+  "devDependencies": {
+    "autoprefix": "^1.0.1",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "clean-webpack-plugin": "^0.1.3",
+    "coffee-loader": "^0.7.3",
+    "coffee-script": "^1.12.6",
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^2.1.2",
+    "file-loader": "^0.11.2",
+    "git-rev-sync": "^1.8.0",
+    "json-loader": "^0.5.4",
+    "node-sass": "^4.5.3",
+    "postcss-loader": "^2.0.6",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "svg-inline-loader": "^0.7.1",
+    "svgo-loader": "^1.2.1",
+    "webpack": "^2.2.0"
+  }
+}
