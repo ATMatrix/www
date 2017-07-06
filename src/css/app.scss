@@ -3,7 +3,7 @@ body {
 }
 
 .logo {
-  background: url('../../images/logo_250.png') no-repeat scroll top left;
+  background: url('../images/logo_250.png') no-repeat scroll top left;
   width: 250px; height: 124px;
   margin:10em auto 5em auto;
   display:block;
@@ -29,7 +29,7 @@ body {
     margin-bottom: 10px;
   }
 
-  input[type=submit] {
+  input.submit {
     margin-left: -5px;
     padding: 10px 20px;
     border: none;

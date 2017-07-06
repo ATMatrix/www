@@ -43,13 +43,14 @@ module.exports = function(){
   ];
 
   if (env == "production") {
-    var outputPath = path.join(root_dir, "assets");
+    var outputPath = path.join(root_dir, "dist");
+    console.log("outputPath", outputPath);
 
     // DIRECTORY CLEANER
     var cleanDirectories = [outputPath];
 
     // WRAP INTO CSS FILE
-    var extractCSS = new ExtractTextPlugin("app.css");
+    var extractCSS = new ExtractTextPlugin("css/app.css");
     cssLoaders = extractCSS.extract({
       fallback: "style-loader",
       use: [
@@ -104,10 +105,11 @@ module.exports = function(){
 
   var config = {
 
-    entry: "./src/js/app.coffee",
+    entry: "./src/index.coffee",
     output: {
+      publicPath: "/", //env.prod ? env.cdn : "/",
       // filename: outputPath + "./js/app.js"
-      filename: "app.js",
+      filename: "js/app.js",
       path: outputPath
     },
 
@@ -131,10 +133,7 @@ module.exports = function(){
         },
         {
           test: /\.(png|jpg|gif)$/,
-          loader: "file-loader",
-          query: {
-            name: '[name].[ext]'
-          }
+          loader: "file-loader?name=./images/[name].[ext]"
         },
         {
           test: /\.woff$/,
@@ -154,12 +153,13 @@ module.exports = function(){
     },
     plugins: plugins,
 
-    watch: true,
+    watch: env == 'development',
 
     devServer: {
       inline: true
     },
     devtool: 'inline-eval-cheap-source-map',
+    target: 'node'
   }
 
   return config;
