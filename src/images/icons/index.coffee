@@ -1,15 +1,25 @@
-# glob = require 'glob'
-# path = require 'path'
-#
-# # console.log("icons/index.js loader");
-# # // glob( './*.png' ).forEach( function( file ) {
-# # //   console.log("load icon: ", path.resolve(file));
-# # //   require( path.resolve( file ) );
-# # // });
-# # glob('./*.png', function())
-#
-# console.log "loading images/icons/*.png"
-#
-# glob './*.png', (err, files) ->
-#   console.log 'icons: ', files
-#
+require 'file-loader?name=images/icons/[name].[ext]!./android-icon-36x36.png'
+require 'file-loader?name=images/icons/[name].[ext]!./android-icon-48x48.png'
+require 'file-loader?name=images/icons/[name].[ext]!./android-icon-72x72.png'
+require 'file-loader?name=images/icons/[name].[ext]!./android-icon-96x96.png'
+require 'file-loader?name=images/icons/[name].[ext]!./android-icon-144x144.png'
+require 'file-loader?name=images/icons/[name].[ext]!./android-icon-192x192.png'
+require 'file-loader?name=images/icons/[name].[ext]!./apple-icon-57x57.png'
+require 'file-loader?name=images/icons/[name].[ext]!./apple-icon-60x60.png'
+require 'file-loader?name=images/icons/[name].[ext]!./apple-icon-72x72.png'
+require 'file-loader?name=images/icons/[name].[ext]!./apple-icon-76x76.png'
+require 'file-loader?name=images/icons/[name].[ext]!./apple-icon-114x114.png'
+require 'file-loader?name=images/icons/[name].[ext]!./apple-icon-120x120.png'
+require 'file-loader?name=images/icons/[name].[ext]!./apple-icon-144x144.png'
+require 'file-loader?name=images/icons/[name].[ext]!./apple-icon-152x152.png'
+require 'file-loader?name=images/icons/[name].[ext]!./apple-icon-180x180.png'
+require 'file-loader?name=images/icons/[name].[ext]!./apple-icon-precomposed.png'
+require 'file-loader?name=images/icons/[name].[ext]!./apple-icon.png'
+require 'file-loader?name=images/icons/[name].[ext]!./favicon-16x16.png'
+require 'file-loader?name=images/icons/[name].[ext]!./favicon-32x32.png'
+require 'file-loader?name=images/icons/[name].[ext]!./favicon-96x96.png'
+require 'file-loader?name=images/icons/[name].[ext]!./ms-icon-70x70.png'
+require 'file-loader?name=images/icons/[name].[ext]!./ms-icon-144x144.png'
+require 'file-loader?name=images/icons/[name].[ext]!./ms-icon-150x150.png'
+require 'file-loader?name=images/icons/[name].[ext]!./ms-icon-310x310.png'
+# require './browserconfig.xml'

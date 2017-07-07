@@ -136,7 +136,8 @@ module.exports = function(){
         },
         {
           test: /\.(png|jpg|gif)$/,
-          loader: "file-loader?name=./images/[name].[ext]"
+          exclude:[path.resolve(root_dir, "src/images/icons")],
+          use: "file-loader?name=./images/[name].[ext]"
         },
         {
           test: /\.woff$/,
