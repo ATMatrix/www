@@ -9,16 +9,20 @@ var root_dir = path.resolve(__dirname);
 module.exports = function(){
   // stage variable
   var env = process.env.NODE_ENV
+  console.log(env);
+
+  // OUTPUT PATH
+  var outputPath = path.join(root_dir, "assets");
 
   var cssLoaders = [
     { loader: "style-loader" },
-    { loader: "css-loader" },
+    { loader: "css-loader?sourceMap" },
     { loader: "postcss-loader" }
   ];
 
   var scssLoaders =  [
     { loader: "style-loader" },
-    { loader: "css-loader" },
+    { loader: "css-loader?sourceMap" },
     {
       loader: "postcss-loader",
       options: {
@@ -26,7 +30,7 @@ module.exports = function(){
       }
     },
     {
-      loader: "sass-loader",
+      loader: "sass-loader?sourceMap",
       options: {
         outputStyle: "expanded"
       }
@@ -44,7 +48,6 @@ module.exports = function(){
 
   if (env == "production") {
     var outputPath = path.join(root_dir, "dist");
-    console.log("outputPath", outputPath);
 
     // DIRECTORY CLEANER
     var cleanDirectories = [outputPath];
@@ -54,7 +57,7 @@ module.exports = function(){
     cssLoaders = extractCSS.extract({
       fallback: "style-loader",
       use: [
-        { loader: "css-loader" },
+        { loader: "css-loader?sourceMap" },
         {
           loader: "postcss-loader",
           options: {
@@ -66,14 +69,14 @@ module.exports = function(){
     scssLoaders = extractCSS.extract({
       fallback: "style-loader",
       use: [
-        { loader: "css-loader" },
+        { loader: "css-loader?sourceMap" },
         {
           loader: "postcss-loader",
           options: {
             plugins: [require("autoprefixer")]
           }
         },
-        { loader: "sass-loader", options: {
+        { loader: "sass-loader?sourceMap", options: {
           outputStyle: "expanded"}
         }
       ]
@@ -102,13 +105,13 @@ module.exports = function(){
     plugins.push(new webpack.NoEmitOnErrorsPlugin());
   }
 
+  console.log("outputPath", outputPath);
 
   var config = {
 
     entry: "./src/index.coffee",
     output: {
       publicPath: "/", //env.prod ? env.cdn : "/",
-      // filename: outputPath + "./js/app.js"
       filename: "js/app.js",
       path: outputPath
     },
@@ -156,10 +159,11 @@ module.exports = function(){
     watch: env == 'development',
 
     devServer: {
-      inline: true
+      inline: true //,
+      // publicPath: '/',
+      // hot: env == 'development'
     },
-    devtool: 'inline-eval-cheap-source-map',
-    target: 'node'
+    devtool: env == 'development' ? 'eval-source-map' : 'inline-eval-cheap-source-map'
   }
 
   return config;
