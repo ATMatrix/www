@@ -40,21 +40,1035 @@ AAAAAAA                   AAAAAATTTTTTTTTTT     MMMMMMMM               MMMMMMMM 
     <meta name="msapplication-TileImage" content="./images/icons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <link href="/css/app.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/app.css?v=1500156221" rel="stylesheet">
   </head>
-  <body>
-    <div class="container">
-      <div class="logo"></div>
+  <body id="page-top" class="landing-page">
 
-      <form id="mailing-list-form" action="//atmatrix.us16.list-manage.com/subscribe/post?u=891cb58e64f257626680a69d3&amp;id=65e18a5191" method="post" target="_blank">
-        <input id="email" placeholder="Your email address" name="EMAIL" type="email" required="true">
-        <button class="submit" type="submit">Sign up</button>
-        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_891cb58e64f257626680a69d3_65e18a5191" tabindex="-1" value=""></div>
-        <div class="hint"><strong>Sign up</strong> for newsletter</div>
-      </form>
+    <!-- navbar -->
+    <div class="navbar-wrapper">
+            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <div class="navbar-header page-scroll">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="/#page-top">
+                          <img src="dist/images/logo@150.png?v=1500156221" alt="ATMatrix" />
+                        </a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a class="page-scroll" href="#about">关于智能矩阵</a></li>
+                            <li><a class="page-scroll" href="#feature">特性</a></li>
+                            <li><a class="page-scroll" href="#scenario">应用场景</a></li>
+                            <li><a class="page-scroll" href="#roadmap">路线图</a></li>
+                            <li><a class="page-scroll" href="#team">团队</a></li>
+                            <li><a class="page-scroll" href="#ico">ICO</a></li>
+                            <li><a class="page-scroll" href="#resource">资源</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+    </div>
+    <!-- end of navbar -->
+
+    <div id="inSlider" class="carousel carousel-fade" data-ride="carousel" style="height:100%;">
+      <div class="carousel-inner" role="listbox">
+        <div class="item active hero-tw">
+          <video playsinline autoplay muted loop poster="dist/images/vidposter.jpg" id="bgvid">
+            <source src="dist/vid/matrix.webm" type="video/webm">
+            <source src="dist/vid/matrix.mp4" type="video/mp4">
+          </video>
+
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>
+                <a href="javascript:void(0)" class="typewrite" data-period="2000" data-type='[ "@&#s 8lks!#", "Heiii0 Morrd@ ..", "Hello world! ", "I am ATMatrix. " ]'>
+                  <span class="wrap"></span>
+                </a>
+              </h1>
+            </div>
+          </div>
+          <!-- Set background for slide in css -->
+          <div class="header-back one"></div>
+
+        </div>
+      </div>
     </div>
 
-    <script src="/js/app.js" type="text/javascript" charset="utf-8"></script>
+    <section id="about" class="about navy-section">
+      <div class="container">
+
+        <div class="row">
+          <img src="dist/images/focus.jpg?v=1500156221" class="img-responsive focus" alt="智能矩阵 ATMatrix AI-aas的下一代区块链&世界人工智能World AI" />
+        </div>
+
+        <div class="row m-t-lg">
+          <div class="col-md-6 text-left">
+            <h1>构建人工智能即服务的下一代区块链平台</h1>
+            <p>旨在提供一个下一代的区块链平台，提供AIaaS人工智能即服务和智能合约，为各个DApp服务，让其可以具备调用人工智能能力，繁荣DBot生态。</p>
+
+
+          </div>
+          <div class="col-md-6 text-left">
+            <h1>构建基于区块链的世界人工智能</h1>
+            <p>旨在提供一个基于共识的、分布式虚拟的AIaaS云基础设施，借助区块链经济系统，调用全球AI/机器人技术力量，建成世界人工智能。各种区块链及DApp，通过跨链互操作技术，访问调用世界人工智能。</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="feature" class="feature gray-section">
+      <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>特性</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 wow fadeInLeft m-b-lg text-center">
+          <i class="fa fa-link features-icon"></i>
+          <h2>连接区块链世界和 AI 世界</h2>
+          <div class="text-left">
+            <p>共享 AI 的第一步，是我们如何通过区块链建立一个将不同 AI 服务连接到一起的服务，以及如何搭建区块链智能合约世界和 AI 世界之间的桥梁，让用户获益。</p>
+            <p>我们将介绍如何用 DBot 技术来让区块链的智能合约和 AI 服务互相操作，我们将首先在以太坊上 实现一个来向以太坊网络上的合约开放这种能力。</p>
+            <p>在这个阶段，还将提供一个 ERC20 的 Token 合约，提供代币作为使用这些 AI 服务的燃料(手续费)。</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 wow fadeInUp m-b-lg text-center">
+          <i class="fa fa-american-sign-language-interpreting features-icon"></i>
+          <h2>无需互信的 AI 互操作</h2>
+          <div class="text-left">
+            <p>ATMatrix 将对常规用户开放提供 AI 服务调用接口，对常规用户隐藏所有复杂的区 块链技术，但对社区开源这些复杂的技术规范和实现。</p>
+            <p>与传统 AI 服务相比，系统更加易于实施。加入 ATMatrix 网络非常简单:</p>
+            <ul>
+              <li>基于 ATMatrix 提供的 API 和 Schema 包装现有的人工智能服务</li>
+              <li>开发 dbot 的 Oracle 预言机程序，接入 AI 服务，并部署到 ATMatrix 的多个预言机 Relay 服务器中.</li>
+              <li>开发调用 AI 服务的代理智能合约，定义价格和其他参数，并部署和注册到 ATMatrix 的 AI 服务管理智能合约中。</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-4 wow fadeInRight m-b-lg text-center">
+          <i class="fa fa-cubes features-icon"></i>
+          <h2>开放平台</h2>
+          <div class="text-left">
+            <p>ATMaxtrix 是一个可通过智能合约扩展的开放平台，从而实现与其它基于以太坊的 DApp 的交互和协作。 </p>
+            <p>ATMaxtrix 的开源特性使得第三方开发人员能更好的在平台之上 构建可交易应用程序。 该平台可以支持多种应用程序。</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section id="scenario" class="scenario navy-section">
+      <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>应用场景</h1>
+        </div>
+      </div>
+
+      <div class="row m-t-lg">
+        <div class="col-md-6 wow fadeInLeft">
+          <img src="dist/images/r1.png?v=1500156221" class="img-responsive" />
+        </div>
+
+        <div class="col-md-6 wow fadeInRight">
+          <h2>分布式智能机器人</h2>
+          <p>面向不同行业的DBot，可以把区块链技术带给更多的用户和行业。例如分布式的社交、分布式的存储和分布式的域名服务、分布式的计算服务等，通过激励机制的引入，将更深层次利用共享经济的理念，改变现有的 APP 市场和商业模式。</p>
+
+          <h2>多行业支持</h2>
+          <p>在智能矩阵系统中，通过引入支持行业共识机制和监管的需求，可以为行业发展需 求也提供支持。可以支持多个行业的应用需求：例如金融业、物联网、供应链、社交和游戏、慈善、数字资产和股权等。</p>
+        </div>
+      </div>
+
+      <div class="row m-t-lg">
+        <div class="col-md-6 wow fadeInLeft">
+          <h2>智能合约调用AI-a-a-Service</h2>
+          <p>如某个保险相关的合约需要通过调用AI来获取下个月上海的天气状况(温度，灾害概率)，以帮助该保险合约完成在该地区中与天气相关的赔率精算，后续的保险赔付执行将根据这个赔率自动执行。因为智能合约是在诸如以太坊这样的网络中的每一个节点中确定性执行的，任何的确定性差错都会带来网络共识的失败，因此节点各自执行的确定性智能合约中无法直接调用外部服务，他们将通过由链上智能合约选举出来的账户执行收集信息并执行链下共识过程后，获取外部AI信息和数据。智能合约将因为有了ATMatrix提供的通向AI服务的桥梁，获得了外部信息的高度及时性和可靠性。</p>
+
+        </div>
+
+        <div class="col-md-6 wow fadeInRight">
+          <img src="dist/images/r2.png?v=1500156221" class="img-responsive" />
+        </div>
+      </div>
+
+
+      <div class="row m-t-lg">
+        <div class="col-md-6 wow fadeInLeft">
+          <img src="dist/images/r3.png?v=1500156221" class="img-responsive" />
+        </div>
+
+        <div class="col-md-6 wow fadeInRight">
+          <h2>基于AI的智能合约去中心化治理</h2>
+          <p>链上的智能合约可以利用AI服务对区块链的链上和链接的链外数据做大数据分析，通过ATMatrix提供经过AI服务和DBot平台后的确定性结果给智能合约，并做进一步的执行。通过这种方式，ATMatrix可以很好的满足链上类似智能合约这样的AI服务消费者的需求，帮助解决区块链合约学习分析能力不足的问题。</p>
+        </div>
+      </div>
+
+      <div class="row m-t-lg">
+        <div class="col-md-6 wow fadeInLeft">
+          <h2>AI服务的互操作性</h2>
+          <p>目前的AI服务是割裂的，因为数据的不同，对应AI擅长的地方各不相同，比如Alpha Go只懂下围棋，微信的AI更懂社交，支付宝的AI更懂支付，谷歌的AI可能更懂搜索行为和热点，其他一些AI更懂语音或语义分析，类比于人类，现在的AI看起来更像是智能的一部分功能，比如只会游泳，只会走路，或者只会说话。未来的智能矩阵必定功能更加全面和丰富，比如当遇到一个对手需要下围棋时就调用Alpha Go的AI服务，当需要检索搜索时，就调用谷歌的AI服务，当需要分析对方的社交关系时，就调用微信的AI服务。</p>
+        </div>
+
+        <div class="col-md-6 wow fadeInRight">
+          <img src="dist/images/r4.png?v=1500156221" class="img-responsive" />
+        </div>
+      </div>
+
+
+      <div class="row m-t-lg">
+        <div class="col-md-6 wow fadeInLeft">
+          <img src="dist/images/r5.png?v=1500156221" class="img-responsive" />
+        </div>
+
+        <div class="col-md-6 wow fadeInRight">
+          <h2>更多场景</h2>
+          <ul>
+            <li>场景一: 智能矩阵区块链技术应用于智能合约</li>
+            <li>场景二: 智能矩阵区块链技术应用于智能制造</li>
+            <li>场景三: 智能矩阵区块链技术应用于智能机器人</li>
+            <li>场景四: 智能矩阵区块链技术应用于智能客户服务</li>
+            <li>场景五: 智能矩阵区块链技术应用于智能证券交易</li>
+            <li>场景六: 智能矩阵区块链技术应用于智能投资顾问</li>
+            <li>场景七: 智能矩阵区块链技术应用于智能数字汇票</li>
+            <li>场景八: 智能矩阵区块链技术应用于智能物业估值</li>
+            <li>场景九: 智能矩阵区块链技术应用于智能物联网</li>
+            <li>场景十: 智能矩阵区块链技术应用于智能物流管理</li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="roadmap" class="roadmap gray-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>路线图</h1>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+              <div id="vertical-timeline" class="vertical-container light-timeline center-orientation">
+                  <div class="vertical-timeline-block wow fadeInLeft">
+                      <div class="vertical-timeline-icon hl-bg">
+                          <i class="fa fa-briefcase"></i>
+                      </div>
+
+                      <div class="vertical-timeline-content">
+                          <h2>项目启动</h2>
+                          <p>智能矩阵项目启动</p>
+                          <span class="vertical-date"> <small>2016.10</small> </span>
+                      </div>
+                  </div>
+
+                  <div class="vertical-timeline-block wow fadeInRight">
+                      <div class="vertical-timeline-icon hl-bg">
+                          <i class="fa fa-file-text"></i>
+                      </div>
+
+                      <div class="vertical-timeline-content">
+                          <h2>项目白皮书</h2>
+                          <p>智能矩阵项目白皮书</p>
+                          <a href="#resource" class="btn btn-xs btn-primary"> 详细</a>
+                          <span class="vertical-date"> <small>2017.06</small> </span>
+                      </div>
+                  </div>
+
+                  <div class="vertical-timeline-block wow fadeInLeft">
+                      <div class="vertical-timeline-icon hl-bg">
+                          <i class="fa fa-cogs"></i>
+                      </div>
+
+                      <div class="vertical-timeline-content">
+                          <h2>可行性验证</h2>
+                          <p>智能矩阵可行性验证完成</p>
+                          <span class="vertical-date"> <br> <small>2017.06</small> </span>
+                      </div>
+                  </div>
+
+
+                  <div class="vertical-timeline-block wow fadeInRight">
+                      <div class="vertical-timeline-icon hl-bg">
+                          <i class="fa fa-first-order"></i>
+                      </div>
+
+                      <div class="vertical-timeline-content">
+                          <h2>Pre-ICO</h2>
+                          <p>智能矩阵项目完成私募</p>
+                          <span class="vertical-date"> <small>2017.07</small> </span>
+                      </div>
+                  </div>
+
+                  <div class="vertical-timeline-block wow fadeInLeft">
+                      <div class="vertical-timeline-icon hl-bg">
+                          <i class="fa fa-bullhorn"></i>
+                      </div>
+
+                      <div class="vertical-timeline-content">
+                          <h2>ICO 计划公布</h2>
+                          <p>公开售卖计划公布</p>
+                          <a href="#ico" class="btn btn-xs btn-primary"> 详细</a>
+                          <span class="vertical-date"> <br> <small>2017.08</small> </span>
+                      </div>
+                  </div>
+
+                  <div class="vertical-timeline-block wow fadeInRight">
+                      <div class="vertical-timeline-icon hl-bg">
+                          <i class="fa fa-sitemap"></i>
+                      </div>
+
+                      <div class="vertical-timeline-content">
+                          <h2>基金会成立</h2>
+                          <p>智能矩阵基金会在新加坡完成注册，正式成立</p>
+                          <span class="vertical-date"> <small>2017.08</small> </span>
+                      </div>
+                  </div>
+
+                  <div class="vertical-timeline-block wow fadeInLeft">
+                      <div class="vertical-timeline-icon hl-bg">
+                          <i class="fa fa-file-text-o"></i>
+                      </div>
+
+                      <div class="vertical-timeline-content">
+                          <h2>治理章程</h2>
+                          <p>基金会治理章程草案完成，选举治理理事会成员，审阅并通过章程。</p>
+                          <span class="vertical-date"> <br> <small>2017.09</small> </span>
+                      </div>
+                  </div>
+
+                  <div class="vertical-timeline-block wow fadeInRight">
+                      <div class="vertical-timeline-icon hl-bg">
+                          <i class="fa fa-users"></i>
+                      </div>
+
+                      <div class="vertical-timeline-content">
+                          <h2>ICO 实施</h2>
+                          <p>开始为期4周的ATT币公开售卖</p>
+                          <a href="#ico" class="btn btn-xs btn-primary"> 详细</a>
+                          <span class="vertical-date"> <small>2017.08-2017.09</small> </span>
+                      </div>
+                  </div>
+
+                  <div class="vertical-timeline-block wow fadeInLeft">
+                      <div class="vertical-timeline-icon hl-bg">
+                          <i class="fa fa-laptop"></i>
+                      </div>
+
+                      <div class="vertical-timeline-content">
+                          <h2>Demo</h2>
+                          <p>智能矩阵第一期基于以太坊EVM虚拟机的演示程序</p>
+                          <a href="#resource" class="btn btn-xs btn-primary"> 详细</a>
+                          <span class="vertical-date"> <br> <small>2017.10</small> </span>
+                      </div>
+                  </div>
+
+                  <div class="vertical-timeline-block wow fadeInRight">
+                      <div class="vertical-timeline-icon hl-bg">
+                          <i class="fa fa-paper-plane"></i>
+                      </div>
+
+                      <div class="vertical-timeline-content">
+                          <h2>公开测试</h2>
+                          <p>智能矩阵第一期公开测试</p>
+                          <span class="vertical-date"> <small>2017.11</small> </span>
+                      </div>
+                  </div>
+
+                  <div class="vertical-timeline-block wow fadeInLeft">
+                      <div class="vertical-timeline-icon hl-bg">
+                          <i class="fa fa-rocket"></i>
+                      </div>
+
+                      <div class="vertical-timeline-content">
+                          <h2>第一期正式上线</h2>
+                          <p>智能矩阵第一期正式上线</p>
+                          <span class="vertical-date"> <br> <small>待定</small> </span>
+                      </div>
+                  </div>
+
+                  <div class="vertical-timeline-block wow fadeInRight">
+                      <div class="vertical-timeline-icon hl-bg">
+                          <i class="fa fa-paper-plane"></i>
+                      </div>
+
+                      <div class="vertical-timeline-content">
+                          <h2>第二期公开测试</h2>
+                          <p>智能矩阵第二期公开测试</p>
+                          <span class="vertical-date"> <small>待定</small> </span>
+                      </div>
+                  </div>
+
+                  <div class="vertical-timeline-block wow fadeInLeft">
+                      <div class="vertical-timeline-icon hl-bg">
+                          <i class="fa fa-rocket"></i>
+                      </div>
+
+                      <div class="vertical-timeline-content">
+                          <h2>第二期正式上线</h2>
+                          <p>智能矩阵第二期正式上线</p>
+                          <span class="vertical-date"> <br> <small>待定</small> </span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 wow fadeInLeft">
+            <h2>第一阶段: 以太坊ATMatrix Dapp和DBot平台</h2>
+            <ul>
+              <li>服务管理合约</li>
+              <li>账户管理合约</li>
+              <li>代币合约</li>
+              <li>治理合约</li>
+              <li>支付合约</li>
+              <li>分账合约</li>
+            </ul>
+          </div>
+          <div class="col-md-6 wow fadeInRight">
+            <h2>第二阶段: DBot区块链平台</h2>
+            <ul>
+              <li>DBot区块链支持EVM兼容的智能合约</li>
+              <li>改进的DPOS共识算法</li>
+              <li>改进的EOS手续费宽带流量控制方式</li>
+              <li>实现：Graphene(或EOS) + EVM</li>
+              <li>借鉴Ethereum 2.0和EOS的分片、并行智能合约、消息通讯设计，每一组AI服务(可能是按照提供商分组)设置对应的分片区，将每一个DBot服务群链下共识的部分转至链上。
+              <li>ATM代币迁移至DBot区块链作为主代币</li>
+              <li>DBot账户迁移至DBot区块链</li>
+              <li>DBot服务管理合约迁移至DBot区块链合约</li>
+              <li>为不同的EVM兼容的智能合约平台开发对应的互操作智能合约，提供不同区块链平台智能合约间的互操作性</li>
+                <ul>
+                  <li>RSK互操作合约</li>
+                  <li>Qtum互操作合约</li>
+                  <li>EOS互操作合约</li>
+                </ul>
+              <li>治理: 系统内置结合AI的代理投票治理合约</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="team gray-section">
+      <div class="container">
+        <div class="row">
+          <div class=“col-md-12”>
+            <h1>核心团队</h1>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 wow fadeInLeft">
+            <div class="team-member">
+              <img src="dist/images/team/gaoqingzhong.jpg?v=1500156221" class="img-responsive img-circle img-small" alt="">
+              <h4>高庆忠</h4>
+              <p class="text-left">长期从事IT和CT战略合作，曾负责过创新孵化中心工作，天使投资并帮助 多个区块链项目，做过大数据、人工智能、区块链领域的战略规划与战略合作;毕业于 上海交通大学，计算机硕士学位，研究方向是人工智能。</p>
+              <ul class="list-inline social-icon">
+                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+
+          <div class="col-md-4 wow fadeInUp">
+            <div class="team-member">
+              <img src="dist/images/team/alien.jpg?v=1500156221" class="img-responsive img-circle img-small" alt="">
+              <h4>李林琳</h4>
+              <p class="text-left">人工智能领域优秀技术专家，尤其在自然语言处理，已完成多个人工智能 项目，包括合约文本的语义理解等项目，在微软人工智能实验室，德国DFKI的人工智能 实验室，和百度人工智能实验室都有丰富的AI项目经验。毕业于德国Saarland大学，博 士学位，研究方向是人工智能</p>
+              <ul class="list-inline social-icon">
+                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4 wow fadeInRight">
+            <div class="team-member">
+              <img src="dist/images/team/liujun.jpg?v=1500156221" class="img-responsive img-circle img-small" alt="">
+              <h4>刘军</h4>
+              <p class="text-left">大数据与人工智能领域首席架构师，做过多个大数据以及人工智能项目，金 融科技和人工智能开发经验丰富;曾就职于腾讯公司，做过多个大数据分析项目;毕业 于上海交通大学，计算机硕士学位，研究方向是人工智能</p>
+              <ul class="list-inline social-icon">
+                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 wow fadeInLeft">
+            <div class="team-member">
+              <img src="dist/images/team/alien.jpg?v=1500156221" class="img-responsive img-circle img-small" alt="">
+              <h4>王晓寅</h4>
+              <p class="text-left">区块链科技公司CTO，比特股社区的几位核心开发者之一，和以太坊社区 的资深开发人员，曾把Google V8引擎移植到比特股石墨烯技术平台上，在EVM虚拟机有 丰富开发经验，区块链领域优秀的技术专家，毕业于南京大学，数学学士学位</p>
+              <ul class="list-inline social-icon">
+                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4 wow fadeInUp">
+            <div class="team-member">
+              <img src="dist/images/team/qianxiaodong.jpg?v=1500156221" class="img-responsive img-circle img-small" alt="">
+              <h4>钱晓栋</h4>
+              <p class="text-left">区块链领域优秀技术专家，全栈工程师，从2011年就投入比特币及区块链 领域的技术工作，参与了多个数字货币项目的技 术开发，尤其在石墨烯技术和EVM智能合约技术上有很丰富的开发经验。毕业于上海交 通大学，科学学士，工业外贸专业</p>
+              <ul class="list-inline social-icon">
+                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+
+          <div class="col-md-4 wow fadeInRight">
+            <div class="team-member">
+              <img src="dist/images/team/yangbo.jpg?v=1500156221" class="img-responsive img-circle img-small" alt="">
+              <h4>杨波</h4>
+              <p class="text-left">8年软件开发工作经验，曾任职于花旗、陆金所，从事金融、互联网金融领域开发工作，同时熟悉系统分析、系统架构设计工作，上海交通大学计算机软件硕士。</p>
+              <ul class="list-inline social-icon">
+                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 wow fadeInLeft">
+            <div class="team-member">
+              <img src="dist/images/team/alien.jpg?v=1500156221" class="img-responsive img-circle img-small" alt="">
+              <h4>朱朝晖</h4>
+              <p class="text-left">复旦大学MBA，在知名高科技公司工作12年，长期从事战略合作、战略投资和产业链整合工作，曾主导成立中国物联网产业联盟和社区，在IT、CT领域的产业生态建设有丰富的经验。</p>
+              <ul class="list-inline social-icon">
+                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4 wow fadeInUp">
+            <div class="team-member">
+              <img src="dist/images/team/julian.jpg?v=1500156221" class="img-responsive img-circle img-small" alt="">
+              <h4>Julian 朱里安</h4>
+              <p class="text-left">&nbsp;</p>
+              <ul class="list-inline social-icon">
+                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+
+          <div class="col-md-4 wow fadeInRight">
+            <div class="team-member">
+              <img src="dist/images/team/ray.jpg?v=1500156221" class="img-responsive img-circle img-small" alt="">
+              <h4>Ray</h4>
+              <p class="text-left">BTCC ICO业务开发，上海区块链聚会组织者</p>
+              <ul class="list-inline social-icon">
+                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 wow fadeInLeft">
+            <div class="team-member">
+              <img src="dist/images/team/liubin.jpg?v=1500156221" class="img-responsive img-circle img-small" alt="">
+              <h4>刘斌</h4>
+              <p class="text-left">&nbsp;</p>
+              <ul class="list-inline social-icon">
+                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4 wow fadeInUp">
+            <div class="team-member">
+              <img src="dist/images/team/zhouqian.jpg?v=1500156221" class="img-responsive img-circle img-small" alt="">
+              <h4>周婧</h4>
+              <p class="text-left">&nbsp;</p>
+              <ul class="list-inline social-icon">
+                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class=“col-md-12”>
+            <h1>社区学术顾问</h1>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 wow fadeInLeft">
+            <div class="team-member">
+              <img src="dist/images/team/alien.jpg?v=1500156221" class="img-responsive img-circle img-small" alt="">
+              <h4>梅宏院士</h4>
+              <p class="text-left">中国科学院院士，发展中国家科学院院士，国际电机电子工程学会会士 (IEEE Fellow)，教授，著名的软件专家学者，软件开源社区倡导者</p>
+              <ul class="list-inline social-icon">
+                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4 wow fadeInUp">
+            <div class="team-member">
+              <img src="dist/images/team/alien.jpg?v=1500156221" class="img-responsive img-circle img-small" alt="">
+              <h4>黄河燕教授</h4>
+              <p class="text-left">中国人工智能学会副理事长，中国中文信息学会副理事长，中国软件 行业协会副理事长; 自然语言处理和机器翻译专家学者，人工智能社区倡导者</p>
+              <ul class="list-inline social-icon">
+                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+
+          <div class="col-md-4 wow fadeInRight">
+            <div class="team-member">
+              <img src="dist/images/team/alien.jpg?v=1500156221" class="img-responsive img-circle img-small" alt="">
+              <h4>姚天昉教授</h4>
+              <p class="text-left">人工智能与自然语言专家学者，中德语言技术联合实验室副主任，主 要研究领域包括情感挖掘、机器学习、自然语言生成、机器翻译、信息检索等</p>
+              <ul class="list-inline social-icon">
+                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 wow fadeInLeft">
+            <div class="team-member">
+              <img src="dist/images/team/alien.jpg?v=1500156221" class="img-responsive img-circle img-small" alt="">
+              <h4>朱频频</h4>
+              <p class="text-left">智臻智能有限公司(小i机器人)创始人</p>
+              <ul class="list-inline social-icon">
+                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4 wow fadeInUp">
+            <div class="team-member">
+              <img src="dist/images/team/alien.jpg?v=1500156221" class="img-responsive img-circle img-small" alt="">
+              <h4>季宙栋</h4>
+              <p class="text-left">资深区块链专家，工信部区块链论坛副秘书长</p>
+              <ul class="list-inline social-icon">
+                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+
+          <div class="col-md-4 wow fadeInRight">
+            <div class="team-member">
+              <img src="dist/images/team/chenshixin.jpg?v=1500156221" class="img-responsive img-circle img-small" alt="">
+              <h4>陈世欣</h4>
+              <p class="text-left">芝麻学社联合创始人及COO，1999年硕士毕业于上海交大计算机系，在互联网创业从业18年，在战略、运营、产品、技术等方面都有多年经验。</p>
+              <ul class="list-inline social-icon">
+                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 wow fadeInLeft">
+            <div class="team-member">
+              <img src="dist/images/team/lisong.jpg?v=1500156221" class="img-responsive img-circle img-small" alt="">
+              <h4>李嵩</h4>
+              <p class="text-left">西雅图青天科技联合创始人兼首席技术官，白帽黑客。在近15年的职业生涯中，李嵩致力于研究大型软件和互联网系统，包括编译器，虚拟机，全球规模的Web服务等等。</p>
+              <ul class="list-inline social-icon">
+                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="row">
+          <div class=“col-md-12”>
+            <h1>早期投资人</h1>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 wow fadeInLeft">
+            <div class="team-member">
+              <img src="dist/images/team/xiaolai.jpg?v=1500156221" class="img-responsive img-circle img-small" alt="">
+              <h4>李笑来</h4>
+              <p class="text-left">比特币及区块链创新领域的业界著名的早期投资者</p>
+              <ul class="list-inline social-icon">
+                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4 wow fadeInUp">
+            <div class="team-member">
+              <img src="dist/images/team/alien.jpg?v=1500156221" class="img-responsive img-circle img-small" alt="">
+              <h4>邓迪</h4>
+              <p class="text-left">中国区块链应用研究中心理事长，太一云科技创始人</p>
+              <ul class="list-inline social-icon">
+                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+
+          <div class="col-md-4 wow fadeInRight">
+            <div class="team-member">
+              <img src="dist/images/team/alien.jpg?v=1500156221" class="img-responsive img-circle img-small" alt="">
+              <h4>张寿松</h4>
+              <p class="text-left">亚洲DACA区块链协会理事长，比特币交易网及ASCH创始人</p>
+              <ul class="list-inline social-icon">
+                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 wow fadeInLeft">
+            <div class="team-member">
+              <img src="dist/images/team/alien.jpg?v=1500156221" class="img-responsive img-circle img-small" alt="">
+              <h4>韩锋</h4>
+              <p class="text-left">清华大学iCenter导师，亚洲DACA区块链协会秘书长，区块链著名布道师 </p>
+              <ul class="list-inline social-icon">
+                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4 wow fadeInUp">
+            <div class="team-member">
+              <img src="dist/images/team/gulu.jpg?v=1500156221" class="img-responsive img-circle img-small" alt="">
+              <h4>鲁斌</h4>
+              <p class="text-left">以太坊社区早期活动家，企业以太坊联盟联合发起人，安兑公司联合创始人</p>
+              <ul class="list-inline social-icon">
+                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+
+          <div class="col-md-4 wow fadeInRight">
+            <div class="team-member">
+              <img src="dist/images/team/qijun.jpg?v=1500156221" class="img-responsive img-circle img-small" alt="">
+              <h4>王奇君</h4>
+              <p class="text-left">以太坊社区早期活动家，企业以太坊联盟联合发起人，安兑公司联合创始人</p>
+              <ul class="list-inline social-icon">
+                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 wow fadeInLeft">
+            <div class="team-member">
+              <img src="dist/images/team/juxie.jpg?v=1500156221" class="img-responsive img-circle img-small" alt="">
+              <h4>刘嘉陵(巨蟹)</h4>
+              <p class="text-left">国内早期区块链项目布道者和投资者，比特创业营创始成员，比特股和以太坊项目早期参与者，比特股理事会理事。</p>
+              <ul class="list-inline social-icon">
+                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4 wow fadeInUp">
+            <div class="team-member">
+              <img src="dist/images/team/chuxiahu.jpg?v=1500156221" class="img-responsive img-circle img-small" alt="">
+              <h4>顾颖(初夏虎)</h4>
+              <p class="text-left">维优创始人，全球比特币终生荣誉会员</p>
+              <ul class="list-inline social-icon">
+                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+
+          <div class="col-md-4 wow fadeInRight">
+            <div class="team-member">
+              <img src="dist/images/team/baicai.jpg?v=1500156221" class="img-responsive img-circle img-small" alt="">
+              <h4>刘强(白菜)</h4>
+              <p class="text-left">BitShares 社区深度参与者,HelloBTS创始人, YOYOW 项目创始人</p>
+              <ul class="list-inline social-icon">
+                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </section>
+
+
+
+    <section id="ico" class="ico">
+      <div class = "container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>ICO计划</h1>
+          </div>
+        </div>
+
+        <div class = "row">
+
+            <div class="row m-t-lg">
+              <div class="col-md-6">
+                <div class="text-center">
+                  <canvas id="allocationChart" height="200"></canvas>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <h2>ATT币分配计划</h2>
+
+                <p>智能矩阵的用户需通过消耗持有的ATT币来获取智能矩阵的功能，尤其在智能矩阵 上运行分布式应用和分布式机器人需要支付和消耗一定量的ATT币。</p>
+                <p>ATT币将会在智能矩阵正式发布时全部产生，由智能矩阵基金会持有。</p>
+
+                <p>ATT币公开售卖获得的收入将会用于智能矩阵基金会的运营，包括开发和市场以及财务和法律咨询等。</p>
+                <p>创始团队、早期投资人以及开发团队在智能矩阵的发展过程中做出了人力、资源、物力以及技术的贡献，因此以 发放ATT币作为回报。</p>
+                <p>筛选合适的行业，进行行业中的战略部署、项目扶持和代币置换，用于智能矩阵技术的行业应用，真正实现商业落 地。</p>
+                <p>用于支持智能矩阵相关的学术研究、开发人员的教育 材料、提高对智能矩阵技术的 意识以及向其他开源社区进 行贡献。</p>
+              </div>
+            </div>
+
+            <div class="col-md-12 text-center m-t-lg">
+              <h2>ICO细则</h2>
+              <p>即将公布，敬请期待</p>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="resource" class="resource text-center gray-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>资源</h1>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 m-b-lg wow fadeInLeft">
+            <i class="fa fa-file-pdf-o features-icon"></i>
+            <h2>白皮书</h2>
+            <p class="m-t-lg"><a href="dist/resource/whitepaper-0.2.1-draft.pdf" target="_blank" class="btn btn-xs btn-primary"> 下载</a></p>
+          </div>
+
+          <div class="col-md-6 m-b-lg wow fadeInRight">
+            <i class="fa fa-laptop features-icon"></i>
+            <h2>在线演示</h2>
+            <p>即将上线</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="mailing_list" class="mailing_list">
+      <div class="container">
+      <div class="row">
+        <div class="col-md-12 wow fadeInUp">
+          <h1>获取最新资讯</h1>
+        </div>
+      </div>
+
+      <form id="mailing-list-form" action="//atmatrix.us16.list-manage.com/subscribe/post?u=891cb58e64f257626680a69d3&amp;id=65e18a5191" method="post" target="_blank">
+        <input id="email" placeholder="电子邮件地址" name="EMAIL" type="email" required="true">
+        <button class="submit" type="submit">订阅</button>
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_891cb58e64f257626680a69d3_65e18a5191" tabindex="-1" value=""></div>
+        <div class="hint"><strong>订阅</strong> 邮件更新</div>
+      </form>
+      </div>
+    </section>
+
+    <section id="footer" class="container footer">
+      <div class="row">
+        <div class="col-md-8">
+          <ul>
+            <li><a class="page-scroll" href="#about">关于智能矩阵</a></li>
+            <li><a class="page-scroll" href="#feature">特性</a></li>
+            <li><a class="page-scroll" href="#scenario">应用场景</a></li>
+            <li><a class="page-scroll" href="#roadmap">路线图</a></li>
+            <li><a class="page-scroll" href="#team">团队</a></li>
+            <li><a class="page-scroll" href="#ico">ICO</a></li>
+            <li><a class="page-scroll" href="#resource">资源</a></li>
+          </ul>
+          <p class="copyright">Copyrights © 2017 All Rights Reserved by ATMatrix Foundation.</p>
+        </div>
+
+        <div class="col-md-4 btm-logo">
+          <a href="/#page-top">
+            <img src="dist/images/logo@150.png?v=1500156221" alt="ATMatrix" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcss.com/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdn.bootcss.com/Chart.js/2.6.0/Chart.min.js"></script>
+    <!-- <script src="/js/vendor.js" type="text/javascript" charset="utf-8"></script> -->
+    <script src="js/app.js?v=1500156221" type="text/javascript" charset="utf-8"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

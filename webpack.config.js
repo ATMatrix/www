@@ -3,6 +3,7 @@ var webpack = require("webpack");
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var Clean = require("clean-webpack-plugin");
 var git = require("git-rev-sync");
+var autoprefix = require("autoprefixer")
 
 var root_dir = path.resolve(__dirname);
 
@@ -26,7 +27,7 @@ module.exports = function(){
     {
       loader: "postcss-loader",
       options: {
-        plugins: [require("autoprefixer")]
+        plugins: [autoprefix]
       }
     },
     {
@@ -61,7 +62,7 @@ module.exports = function(){
         {
           loader: "postcss-loader",
           options: {
-            plugins: [require("autoprefixer")]
+            plugins: [autoprefix]
           }
         }
       ]
@@ -73,7 +74,7 @@ module.exports = function(){
         {
           loader: "postcss-loader",
           options: {
-            plugins: [require("autoprefixer")]
+            plugins: [autoprefix]
           }
         },
         { loader: "sass-loader?sourceMap", options: {
@@ -109,10 +110,14 @@ module.exports = function(){
 
   var config = {
 
-    entry: "./src/index.coffee",
+    entry: {
+      app: "./src/index.coffee",
+      // vendor: ["jquery", "bootstrap"]
+    },
+
     output: {
       publicPath: "/", //env.prod ? env.cdn : "/",
-      filename: "js/app.js",
+      filename: "js/[name].js",
       path: outputPath
     },
 
@@ -136,7 +141,7 @@ module.exports = function(){
         },
         {
           test: /\.(png|jpg|gif)$/,
-          exclude:[path.resolve(root_dir, "src/images/icons")],
+          exclude:[path.resolve(root_dir, "src/images/icons"),path.resolve(root_dir, "src/images/team")],
           use: "file-loader?name=./images/[name].[ext]"
         },
         {
@@ -155,6 +160,7 @@ module.exports = function(){
         { test: /.*\.svg$/, loaders: ["svg-inline-loader", "svgo-loader"] }
       ]
     },
+
     plugins: plugins,
 
     watch: env == 'development',

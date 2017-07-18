@@ -1,12 +1,19 @@
-$font: Menlo, Monaco, 'Courier New', monospace, 'PingFang SC','Hiragino Sans GB','Microsoft YaHei', Arial, sans-serif;
 
-@import "form.scss";
+// Variables, Mixins
+@import "variables";
+@import "mixins";
 
-body {
-  background-color: #342c29;
+@import "typography";
+@import "navigation";
+@import "buttons";
+@import "base";
+@import "timeline";
+@import "metismenu";
+@import "landing";
+@import "pages";
+@import "form";
+@import "_mailing_list";
 
-  font-family: $font;
-}
 
 .logo {
   background: url('../images/logo_250.png') no-repeat scroll top left;
@@ -15,42 +22,14 @@ body {
   display:block;
 }
 
-#mailing-list-form {
-  padding-top:2em;
-  text-align:center;
-
-  input {
-    display: inline-block;
-    vertical-align: top;
-    font-size: 1.1rem;
-    height: 42px;
+// Clear layout on print mode
+@media print {
+  nav.navbar-static-side {
+    display: none;
   }
+  body { overflow: visible !important; }
 
-  input[type=email] {
-    border: none;
-    border-radius: 100px 0 0 100px;
-    width: 220px;
-    padding: 0 0 0 20px;
-    margin-bottom: 10px;
-  }
-
-  button[type=submit], .submit {
-    @extend input;
-    margin-left: -10px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 0px 100px 100px 0;
-    color: #fff;
-    background-color: #c87c1c;
-    transition: background-color .3s;
-    cursor: pointer;
-
-    &:hover {
-      background-color: lighten(#c87c1c, 10);
-    }
-  }
-
-  .hint {
-    color: #eee;
+  #page-wrapper {
+    margin: 0;
   }
 }

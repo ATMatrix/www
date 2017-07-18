@@ -1,0 +1,52 @@
+.space {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+#about {
+  @extend .space;
+  h1 { text-align:left; }
+  background-color: black;
+//  background-color: #071629;
+  img.focus { margin:auto; }
+}
+#feature {
+  @extend .space;
+}
+#scenario {
+  @extend .space;
+
+  img { max-width: 70%; margin:auto; }
+}
+#team {
+  @extend .space;
+
+  div.col-lg-4 {
+    margin-bottom: 40px;
+  }
+
+  .team-member {
+    padding: 10px 20px;
+    &:hover {
+      box-shadow: rgba(0,0,0,0.188235) 0px 17px 50px 0px;
+      transition: All 0.3s ease;
+    }
+
+    h4{ margin-top:10px; }
+    .social-icon { display:none; }
+  }
+}
+#ico {
+  @extend .space;
+
+  color: white;
+}
+
+#roadmap {
+  @extend .space;
+  background-color: #eee;
+  h2 { color: black; }
+}
+
+#resource {
+  @extend .space;
+}
