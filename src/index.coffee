@@ -1,5 +1,6 @@
 # pages
 require "file-loader?name=index.html!./index.html"
+require "file-loader?name=en.html!./en.html"
 
 # icons
 require "file-loader?name=favicon.ico!./favicon.ico"
