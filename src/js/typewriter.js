@@ -1,4 +1,4 @@
-var TxtType = function(el, toRotate, period) {
+var TxtType = function(el, toRotate, period, onFinished) {
         this.toRotate = toRotate;
         this.el = el;
         this.loopNum = 0;
@@ -7,7 +7,14 @@ var TxtType = function(el, toRotate, period) {
         this.tick();
         this.isDeleting = false;
         this.it = null;
+        this.onFinished = onFinished
     };
+
+    TxtType.prototype.destroy = function(){
+      clearInterval(this.it);
+      if (this.onFinished)
+        this.onFinished()
+    }
 
     TxtType.prototype.tick = function() {
         var i = this.loopNum % this.toRotate.length;
@@ -35,11 +42,11 @@ var TxtType = function(el, toRotate, period) {
           delta = 500;
         }
 
+        rotateNum = this.toRotate.length;
         this.it = setTimeout(function() {
-          if (that.loopNum > 3) {
+          if (that.loopNum >= rotateNum) {
             clearInterval(that.it);
-            $('#inSlider').slideUp();
-            $('#about').addClass('m-t-xlg');
+            that.onFinished();
           } else {
             that.tick();
           }

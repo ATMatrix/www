@@ -1,5 +1,9 @@
 console.log "hello world"
 
+clearTyper = ->
+  $('#inSlider').slideUp();
+  $('#about').addClass('m-t-xlg');
+
 startTyper = ->
   $('.typewrite').each (i, elem) ->
     toRotate = $(elem).data('type')
@@ -11,7 +15,14 @@ startTyper = ->
       data = toRotate
 
     if toRotate
-      new TxtType elem, data, period
+      $(elem).data 'instance', (new TxtType elem, data, period, clearTyper)
+
+  # continue arrow
+  $('#continue').on 'click', ->
+    $('.typewrite').each (i, elem) ->
+      $(elem).data('instance').destroy()
+
+
 
 drawAllowcationChart = ->
   data =
