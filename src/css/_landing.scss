@@ -195,7 +195,7 @@
     font-size: 12px;
     padding: 10px;
     height: auto;
-    zoom:0.6;
+    zoom:0.5;
   }
   /* BACKGROUNDS SLIDER
   -------------------------------------------------- */
@@ -690,8 +690,23 @@
       font-size: 28px;
     }
 
-    .navbar.navbar-scroll .navbar-brand {
+    .navbar .navbar-brand {
       margin-top: 6px;
+      border-radius: 5px;
+      font-size: 12px;
+      padding: 10px;
+      height: auto;
+      width: 90px;
+
+      img { zoom: 0.5; }
+    }
+
+    .navbar.navbar-scroll .navbar-brand {
+      border-radius: 5px;
+
+      margin-top: 6px;
+      zoom: 1;
+      width: 90px;
     }
 
     .navbar-default {
@@ -700,55 +715,54 @@
       padding: 15px 0;
     }
 
-    .navbar-default .navbar-nav > .active > a:focus {
-      background: transparent;
-      color: inherit;
+    .nav > li > a {
+      padding: 25px 10px 15px 10px;
+
+      color: #666;
     }
 
-    .navbar-default .nav li a {
-      color: $text-color;
+    .navbar-default .navbar-nav.nav li a {
+      color: #666;
       padding: 10px;
+
+      &:hover, &:active {
+        color: white;
+        background-color: #999;
+      };
     }
 
-    .navbar-default .nav li a:hover {
-      color: $navy;
+    .navbar-default .navbar-nav > .active {
+      & > a:focus {
+        background: transparent;
+        color: inherit;
+      }
+
+      & > a, & > a:hover {
+        color: white !important;
+        background-color: #666;
+        border:none;
+      }
     }
+
 
     .navbar-wrapper .navbar {
       padding-top: 0;
       padding-bottom: 5px;
       border-bottom: 1px solid $border-color;
       border-radius: 0;
+      background-color: black;
     }
 
-    .nav > li > a {
-      padding: 25px 10px 15px 10px;
-    }
-
-    .navbar-nav > li > a {
-      padding: 10px 10px;
-      color: #666;
-    }
-
-    .navbar .navbar-brand {
-      margin-top: 6px;
-      border-radius: 5px;
-      font-size: 12px;
-      padding: 10px;
-      height: auto;
-
-      zoom:0.5;
-    }
 
     .navbar-wrapper .navbar {
       padding-left: 15px;
-      padding-right: 5px;
+      padding-right: 15px;
+
+      .nav.navbar-nav {
+        background-color: white;
+      }
     }
 
-    .navbar-default .navbar-nav > .active > a,
-    .navbar-default .navbar-nav > .active > a:hover {
-      color: inherit;
-    }
 
     .carousel-control {
       display: none;
@@ -767,9 +781,12 @@
     }
 
     .navbar .navbar-header .navbar-toggle {
-      background-color: #ffffff;
+      background-color: transparent;
       padding: 9px 10px;
       border: none;
+      height:45px;
+
+      span { background-color: #eee; }
     }
   }
 
