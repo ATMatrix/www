@@ -9,7 +9,7 @@
 
 /* PACE PLUGIN
 -------------------------------------------------- */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   body { padding-top:55px; }
 }
 
@@ -395,7 +395,7 @@
       }
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       &.item {
         height: 230px;
       }
@@ -642,7 +642,7 @@
   }
   /* RESPONSIVE CSS
   -------------------------------------------------- */
-  @media (min-width: 768px) {
+  @media (min-width: 767px) {
     /* Navbar positioning foo */
     .navbar-wrapper {
       margin-top: 20px;
@@ -679,7 +679,7 @@
       display: none;
     }
   }
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .carousel-caption,
     .carousel-caption.blank {
       left: 5%;
@@ -774,7 +774,7 @@
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .navbar .navbar-header {
       display: block;
       float: none;
