@@ -43,9 +43,9 @@ drawAllowcationChart = (locale = "zh-CN") ->
 
 window.set_locale = (locale) ->
   if locale == 'en'
-    window.location.href= '/en.html';
+    window.location.href= 'http://atmatrix.org/en.html';
   else
-    window.location.href= '/';
+    window.location.href= 'http://atmatrix.org/';
 
 
 
