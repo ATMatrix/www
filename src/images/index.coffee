@@ -1,6 +1,9 @@
 require './logo@150.png'
 require './focus.jpg'
+require './focus_en.jpg'
 require './vidposter.jpg'
+require './blank.gif'
+require './flags.png'
 
 # robots
 require './r1.png'
