@@ -2,7 +2,7 @@ console.log "hello world"
 
 clearTyper = ->
   $('#inSlider').slideUp();
-  $('#about').addClass('m-t-xlg');
+  # $('#about').addClass('m-t-lg');
 
 startTyper = ->
   $('.typewrite').each (i, elem) ->
@@ -24,15 +24,14 @@ startTyper = ->
 
 
 
-drawAllowcationChart = ->
+drawAllowcationChart = (locale = "zh-CN") ->
   data =
     datasets: [
       data: [30,15,5,30,20],
       backgroundColor: ["#FFE8C6", "#4F2F1B", "#6A3E23","#3B2820","#D0A081"],
       label: ["My Radar chart"]
     ],
-    labels: [
-        " 一期ICO"," 商业落地部署"," 学术研究"," 二期ICO"," 天使投资人、团队"
+    labels: if locale == "en" then [ " ICO 1st", " Business Development", " Academic Research", " ICO 2nd", " Angels & Team"] else [" 一期ICO"," 商业落地部署"," 学术研究"," 二期ICO"," 天使投资人、团队"
     ]
 
   options =
@@ -41,6 +40,14 @@ drawAllowcationChart = ->
 
   ctx3 = document.getElementById("allocationChart").getContext("2d");
   new Chart(ctx3, {type: 'pie', data: data, options: options});
+
+window.set_locale = (locale) ->
+  if locale == 'en'
+    window.location.href= '/en.html';
+  else
+    window.location.href= '/';
+
+
 
 # init scroll spy
 $('body').scrollspy
@@ -63,7 +70,7 @@ startTyper()
 # wow
 new WOW().init()
 
-drawAllowcationChart()
+drawAllowcationChart(lang)
 
 `
 var cbpAnimatedHeader = (function() {

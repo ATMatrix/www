@@ -58,7 +58,7 @@
 .dropdown-menu {
   border: medium none;
   border-radius: 3px;
-  box-shadow: 0 0 3px rgba(86, 96, 117, 0.7);
+//  box-shadow: 0 0 3px rgba(86, 96, 117, 0.7);
   display: none;
   float: left;
   font-size: 12px;
@@ -85,7 +85,7 @@
 .dropdown-menu > .active > a:hover {
   color: #fff;
   text-decoration: none;
-  background-color: $navy;
+  background-color: #ccc;
   outline: 0;
 }
 
