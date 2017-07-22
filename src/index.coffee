@@ -17,6 +17,8 @@ require "./css/app.scss"
 
 # resource
 require "file-loader?name=resource/[name].[ext]!./resource/whitepaper-0.2.1-draft.pdf"
+require "file-loader?name=resource/[name].[ext]!./resource/whitepaper-v0.2.4.pdf"
+require "file-loader?name=resource/[name].[ext]!./resource/whitepaper-v0.2.1-draft-en.pdf"
 
 # json
 require "file-loader?name=manifest.json!./manifest.json"
