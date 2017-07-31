@@ -19,6 +19,7 @@ require "./css/app.scss"
 require "file-loader?name=resource/[name].[ext]!./resource/whitepaper-0.2.1-draft.pdf"
 require "file-loader?name=resource/[name].[ext]!./resource/whitepaper-v0.2.4.pdf"
 require "file-loader?name=resource/[name].[ext]!./resource/whitepaper-v0.2.5.pdf"
+require "file-loader?name=resource/[name].[ext]!./resource/whitepaper-v0.2.6.pdf"
 
 require "file-loader?name=resource/[name].[ext]!./resource/whitepaper-v0.2.1-draft-en.pdf"
 
