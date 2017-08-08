@@ -1,5 +1,5 @@
 require './logo@150.png'
-require './focus.jpg'
+require './focus_1.jpg'
 require './focus_en.jpg'
 require './vidposter.jpg'
 require './blank.gif'
