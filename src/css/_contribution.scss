@@ -1,0 +1,79 @@
+.contribution {
+
+  .chrome-icon {
+      background: url(../images/contrib/chrome@2x.png);
+      width: 57px;
+      height: 57px;
+      background-size: 100%;
+      margin:5px auto;
+  }
+
+  .metamask-icon {
+      background: url(../images/contrib/metamask@2x.png);
+      width: 65px;
+      height: 60px;
+      background-size: 100%;
+      margin:5px auto;
+  }
+
+  .mew-icon {
+      background: url(../images/contrib/mew@2x.png);
+      width: 58px;
+      height: 57px;
+      background-size: 100%;
+      margin:5px auto;
+  }
+
+  .imtoken-icon {
+      background: url(../images/contrib/imtoken.png);
+      width: 58px;
+      height: 57px;
+      background-size: 100%;
+      margin:5px auto;
+  }
+
+  @media (max-width: 767px) {
+    .address-txt { font-size:80%; }
+  }
+
+  .ico-address {
+      background: url(../images/contrib/att_ico_address.png);
+      width: 280px;
+      height: 280px;
+      background-size: 100%;
+      margin:5px auto;
+  }
+
+  pre { background-color: #333; }
+
+  .box {
+    .title {
+      margin-top:10px; margin-bottom:5px;
+    }
+    .block {
+      padding:10px; background: #333; color: white;
+    }
+  }
+
+  .tabs-container {
+    ul.nav.nav-tabs {
+      li {
+        margin-bottom:-1px;
+        a {
+          padding:15px 25px;
+
+          &:hover {
+            background-color:transparent;
+          }
+        }
+
+        &.active {
+          a {
+            border-bottom:1px solid black;
+            color:white;
+          }
+        }
+      }
+    }
+  }
+}

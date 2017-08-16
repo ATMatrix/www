@@ -38,8 +38,9 @@ drawAllowcationChart = (locale = "zh-CN") ->
     segmentStrokeWidth: 2,
     responsive: true
 
-  ctx3 = document.getElementById("allocationChart").getContext("2d");
-  new Chart(ctx3, {type: 'pie', data: data, options: options});
+  if document.getElementById("allocationChart")
+    ctx3 = document.getElementById("allocationChart").getContext("2d");
+    new Chart(ctx3, {type: 'pie', data: data, options: options});
 
 window.set_locale = (locale) ->
   if locale == 'en'

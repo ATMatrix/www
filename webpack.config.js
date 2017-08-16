@@ -141,7 +141,10 @@ module.exports = function(){
         },
         {
           test: /\.(png|jpg|gif)$/,
-          exclude:[path.resolve(root_dir, "src/images/icons"),path.resolve(root_dir, "src/images/team")],
+          exclude:[
+            path.resolve(root_dir, "src/images/icons"),
+            path.resolve(root_dir, "src/images/team")
+          ],
           use: "file-loader?name=./images/[name].[ext]"
         },
         {

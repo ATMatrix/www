@@ -1,6 +1,7 @@
 # pages
 require "file-loader?name=index.html!./index.html"
 require "file-loader?name=en.html!./en.html"
+require "file-loader?name=instruction.html!./instruction.html"
 
 # icons
 require "file-loader?name=favicon.ico!./favicon.ico"
@@ -22,6 +23,8 @@ require "file-loader?name=resource/[name].[ext]!./resource/whitepaper-v0.2.5.pdf
 require "file-loader?name=resource/[name].[ext]!./resource/whitepaper-v0.2.6.pdf"
 
 require "file-loader?name=resource/[name].[ext]!./resource/whitepaper-v0.2.1-draft-en.pdf"
+
+require "file-loader?name=resource/[name].[ext]!./resource/get-imtoken.pdf"
 
 # json
 require "file-loader?name=manifest.json!./manifest.json"
