@@ -50,3 +50,19 @@
 #resource {
   @extend .space;
 }
+
+.ico-status {
+  display:none;
+
+  &.coming {
+    color: white;
+  }
+
+  &.inprogress {
+    color: orange;
+  }
+
+  &.finished {
+    color: red;
+  }
+}

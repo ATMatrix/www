@@ -43,7 +43,7 @@ AAAAAAA                   AAAAAATTTTTTTTTTT     MMMMMMMM               MMMMMMMM 
     <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
     <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/app.css?v=1502265286" rel="stylesheet">
+    <link href="css/app.css?v=1502265888" rel="stylesheet">
     <script type="text/javascript">
       var lang = "zh-CN";
     </script>
@@ -63,7 +63,7 @@ AAAAAAA                   AAAAAATTTTTTTTTTT     MMMMMMMM               MMMMMMMM 
                             <span class="icon-bar"></span>
                         </button>
                         <a class="navbar-brand" href="/#page-top">
-                          <img src="dist/images/logo@150.png?v=1502265286" alt="Atmatrix" />
+                          <img src="dist/images/logo@150.png?v=1502265888" alt="Atmatrix" />
                         </a>
                     </div>
                     <div id="navbar" class="navbar-collapse collapse">
@@ -98,6 +98,16 @@ AAAAAAA                   AAAAAATTTTTTTTTTT     MMMMMMMM               MMMMMMMM 
     <section class="ico contribution">
       <div class = "container">
 
+        <div class="row m-t-lg">
+          <div class="ico-status coming text-center">
+            <h1>ICO 即将开始</h1>
+            <p>将于 2017年8月18日 晚上8点 准时开启</p>
+          </div>
+
+          <h1 class="ico-status inprogress">ICO 进行中</h1>
+          <h1 class="ico-status finished">ICO 已成功结束</h1>
+        </div>
+
         <div class="row">
           <div class="col-md-12 m-t-lg">
             <h1>如何参与</h1>
@@ -125,7 +135,7 @@ AAAAAAA                   AAAAAATTTTTTTTTTT     MMMMMMMM               MMMMMMMM 
                     <div class="box text-center m-t-md m-b-md">
                       <div class="title">ICO智能合约地址</div>
                       <span class="block address-txt">0x051fda7486480dd5abcf5dd742ef002a2ebb9ea0</span>
-                      <div class="title">别名</div>
+                      <div class="title">ENS别名</div>
                       <span class="block address-txt">attsale.eth</span>
                       <div class="title">二维码</div>
                       <div class="ico-address"></div>
@@ -134,7 +144,7 @@ AAAAAAA                   AAAAAATTTTTTTTTTT     MMMMMMMM               MMMMMMMM 
                       </div>
 
                       <div class="text-left m-t-lg">
-                        <p>别名是比较容易记住的名字，指向以太坊地址，将别名当做转账地址使用需要钱包的支持，下面推荐的钱包均支持别名。</p>
+                        <p>就像域名一样，ENS别名是比较容易记住的名字，指向以太坊地址，将别名当做转账地址使用时需要钱包的支持，下面推荐的钱包均支持别名。</p>
                         <h3>请再次确认以下几点</h3>
                         <ul>
                           <li>请确认上方显示的ICO智能合约地址与 <pre><a href="https://etherscan.io/address/attsale.eth" target="_blank">https://etherscan.io/address/attsale.eth</a></pre> 页面上显示的 Contract Address 值完全一致，否则网站可能已被攻击；</li>
@@ -400,9 +410,11 @@ AAAAAAA                   AAAAAATTTTTTTTTTT     MMMMMMMM               MMMMMMMM 
                     <p>比特股内盘中的 ATMATRIX 资产由 Atmatrix 基金会账户注册发行并进行承兑，按照ICO细则规定的早鸟计划设置售价。ATMATRIX资产始终可以按1:1的比例兑换ATT代币，是ATT代币在比特股内盘的映射。</p>
 
                     <h2>参与方式</h2>
-                    <p>HelloBTS 是比特股最大的中文社区，本次Atmatrix ICO部分额度通过HellBTS进行。</p>
-                    <div class="m-b-md"><a href="https://hellobts.com" class="btn btn-success" target="_blank">访问 HelloBTS.com 参与</a></div>
-                    <p>详细使用教程即将发布</p>
+                    <p>HelloBTS是国内最大的比特股社区，运营有HelloBTS资讯站、Hi区块链微信公众号，并于近期发布了优化版的比特股网页钱包。Atmatrix项目ICO部分额度将通过HelloBTS进行。</p>
+                    <p>
+                      <img src="dist/images/bts.jpg" class="img-responsive" />
+                    </p>
+                    <div class="m-b-md m-t-lg text-center"><a href="https://hellobts.com" class="btn btn-success" target="_blank">访问 HelloBTS.com 参与</a></div>
                   </div>
                 </div>
 
@@ -418,6 +430,22 @@ AAAAAAA                   AAAAAATTTTTTTTTTT     MMMMMMMM               MMMMMMMM 
       </div>
 
 
+      </div>
+    </section>
+
+    <section id="mailing_list" class="mailing_list">
+      <div class="container">
+      <div class="row">
+        <div class="col-md-12 wow fadeInDown">
+          <h1>查询ATT余额</h1>
+        </div>
+      </div>
+
+      <form id="check-balance" action="//etherscan.io/address" method="get" target="_blank">
+        <input id="ethAddress" placeholder="请输入你的ETH发送地址" name="eth_address" type="text" required="true">
+        <button class="submit" type="submit">查询</button>
+        <!-- <div class="hint"><strong>查询ATT余额</strong></div> -->
+      </form>
       </div>
     </section>
 
@@ -439,7 +467,7 @@ AAAAAAA                   AAAAAATTTTTTTTTTT     MMMMMMMM               MMMMMMMM 
 
         <div class="col-md-4 btm-logo">
           <a href="/#page-top">
-            <img src="dist/images/logo@150.png?v=1502265286" alt="Atmatrix" />
+            <img src="dist/images/logo@150.png?v=1502265888" alt="Atmatrix" />
           </a>
         </div>
       </div>
@@ -450,7 +478,7 @@ AAAAAAA                   AAAAAATTTTTTTTTTT     MMMMMMMM               MMMMMMMM 
     <script src="//cdn.bootcss.com/wow/1.1.2/wow.min.js"></script>
     <script src="//cdn.bootcss.com/Chart.js/2.6.0/Chart.min.js"></script>
     <!-- <script src="/js/vendor.js" type="text/javascript" charset="utf-8"></script> -->
-    <script src="js/app.js?v=1502265286" type="text/javascript" charset="utf-8"></script>
+    <script src="js/app.js?v=1502265888" type="text/javascript" charset="utf-8"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

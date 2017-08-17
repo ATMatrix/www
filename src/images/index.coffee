@@ -93,3 +93,5 @@ require 'file-loader?name=images/contrib/imtoken/[name].[ext]!./contrib/imtoken/
 require 'file-loader?name=images/contrib/imtoken/[name].[ext]!./contrib/imtoken/imtoken-3.jpg'
 require 'file-loader?name=images/contrib/imtoken/[name].[ext]!./contrib/imtoken/imtoken-4.jpg'
 require 'file-loader?name=images/contrib/imtoken/[name].[ext]!./contrib/imtoken/imtoken-5.png'
+
+require 'file-loader?name=images/contrib/bts/[name].[ext]!./contrib/bts/bts.jpg'
