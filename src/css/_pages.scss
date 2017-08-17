@@ -53,9 +53,12 @@
 
 .ico-status {
   display:none;
+  padding: 20px 10px;
+  background-color: #111;
+  margin: 3em auto;
 
   &.coming {
-    color: white;
+    color: lawngreen;
   }
 
   &.inprogress {
