@@ -87,6 +87,8 @@ require 'file-loader?name=images/contrib/mew/[name].[ext]!./contrib/mew/mew-7.pn
 require 'file-loader?name=images/contrib/mew/[name].[ext]!./contrib/mew/mew-8.png'
 require 'file-loader?name=images/contrib/mew/[name].[ext]!./contrib/mew/mew-9.png'
 require 'file-loader?name=images/contrib/mew/[name].[ext]!./contrib/mew/mew-10.png'
+require 'file-loader?name=images/contrib/mew/[name].[ext]!./contrib/mew/mew-11.png'
+require 'file-loader?name=images/contrib/mew/[name].[ext]!./contrib/mew/mew-12.png'
 
 require 'file-loader?name=images/contrib/imtoken/[name].[ext]!./contrib/imtoken/imtoken-1.jpg'
 require 'file-loader?name=images/contrib/imtoken/[name].[ext]!./contrib/imtoken/imtoken-2.jpg'
