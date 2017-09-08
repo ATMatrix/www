@@ -254,6 +254,13 @@ ul.unstyled, ol.unstyled {
     }
   }
 
+  ul.contact {
+    margin-top:5px;
+    li {
+      display:list-item; float:none;
+    }
+  }
+
   .copyright {
     color: grey; margin-top:3em;
   }
