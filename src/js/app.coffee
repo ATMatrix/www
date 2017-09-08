@@ -85,11 +85,11 @@ initCheckBalance = ->
 checkICOStatus = ->
   if $('.ico-status') and Date.now() > 1503057600000
     $('.ico-status.coming').hide();
-    $('.ico-status.progress').show();
+    $('.ico-status.inprogress').show();
     $('.ico-status.finished').hide();
   else
     $('.ico-status.coming').show();
-    $('.ico-status.progress').hide();
+    $('.ico-status.inprogress').hide();
     $('.ico-status.finished').hide();
 
 # typer
@@ -102,7 +102,7 @@ drawAllowcationChart(lang)
 
 initIaccept()
 initCheckBalance()
-checkICOStatus()
+# checkICOStatus()
 
 `
 var cbpAnimatedHeader = (function() {

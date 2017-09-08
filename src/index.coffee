@@ -2,6 +2,7 @@
 require "file-loader?name=index.html!./index.html"
 require "file-loader?name=en.html!./en.html"
 require "file-loader?name=instruction.html!./instruction.html"
+require "file-loader?name=refund.html!./refund.html"
 
 # icons
 require "file-loader?name=favicon.ico!./favicon.ico"
