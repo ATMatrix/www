@@ -238,6 +238,36 @@ ul.unstyled, ol.unstyled {
   color: #e5e6e7;
 }
 
+ul.contact {
+  margin-top:2em; margin-left:auto; margin-right:auto; padding-left:0;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  li {
+    text-align:center; margin-right: 5px; padding:5px; margin-bottom: 2em;
+    font-size:9px; display:block; width: 130px;
+
+    .fa {
+      font-size: 45px; display:block; margin-bottom:15px;
+    }
+
+  }
+}
+
+@media (max-width: 992px) {
+  ul.contact {
+    li { width: 48%; }
+  }
+}
+
+@media screen and (max-width: 767px){
+  ul.contact {
+    li { width: 32%; }
+  }
+}
+
 /* FOOTER */
 
 .footer {
@@ -251,13 +281,6 @@ ul.unstyled, ol.unstyled {
       display: inline-block; float:left;
 
       a { padding: 5px 10px 5px 0px; }
-    }
-  }
-
-  ul.contact {
-    margin-top:5px;
-    li {
-      display:list-item; float:none;
     }
   }
 
