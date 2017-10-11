@@ -1,0 +1,38 @@
+
+// Variables, Mixins
+@import "variables";
+@import "mixins";
+
+@import "typography";
+@import "navigation";
+@import "buttons";
+@import "base";
+@import "timeline";
+@import "metismenu";
+@import "landing";
+@import "pages";
+@import "form";
+@import "mailing_list";
+@import "flags";
+@import "contribution";
+@import "post";
+
+
+.logo {
+  background: asset_url('logo_250.png') no-repeat scroll top left;
+  width: 250px; height: 124px;
+  margin:10em auto 5em auto;
+  display:block;
+}
+
+// Clear layout on print mode
+@media print {
+  nav.navbar-static-side {
+    display: none;
+  }
+  body { overflow: visible !important; }
+
+  #page-wrapper {
+    margin: 0;
+  }
+}

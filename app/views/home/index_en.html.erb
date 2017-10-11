@@ -1,0 +1,993 @@
+<% content_for :footer do -%>
+    <%= javascript_include_tag 'home', 'data-turbolinks-track' => 'reload' %>
+<% end -%>
+
+  <div id="inSlider" class="carousel carousel-fade" data-ride="carousel" style="height:100%;">
+    <div class="carousel-inner" role="listbox">
+      <div class="item active hero-tw">
+        <video playsinline autoplay muted loop poster="<%= image_path('vidposter.jpg') %>" id="bgvid">
+          <source src="<%= asset_path('matrix.webm') %>" type="video/webm">
+          <source src="<%= asset_path('matrix.mp4') %>" type="video/mp4">
+        </video>
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>
+              <a href="javascript:void(0)" class="typewrite" data-period="2000" data-type='[ "@&#s 8lks!#", "Heiii0 Morrd@ ..", "Hello world! ", "I am Atmatrix. " ]'>
+                <span class="wrap"></span>
+              </a>
+            </h1>
+          </div>
+        </div>
+
+        <span class="arrow"><a id="continue">继续</a></span>
+
+      </div>
+    </div>
+  </div>
+
+
+  <section id="about" class="about navy-section m-t-lg">
+    <div class="container">
+
+      <div class="row">
+        <%= image_tag "focus_en.jpg", class: "img-responsive focus", alt: "智能矩阵 Atmatrix AIaaS的下一代区块链&世界人工智能World AI" %>
+      </div>
+
+      <div class="row m-t-lg">
+        <div class="col-md-6 text-left">
+          <h1>Build a Next-Generation Blockchain with AIaaS</h1>
+          <p>Atmatrix aims to provide a next-generation blockchain with smart-contract platform and AIaaS. It will make all DApps have good opportunity to get AI capability and service. Atmatrix will make the DBots/DApps ecosystem grow prosperously.</p>
+
+
+        </div>
+        <div class="col-md-6 text-left">
+          <h1>Build a Blockchain-based World AI</h1>
+          <p>Atmatrix aims to provide a consensus based distributed virtual AI-as-a-Service cloud. With the aid of blockchain economic system, Atmatrix coordinates global AI technologies to build a new world of artificial intelligence.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="feature" class="feature gray-section">
+    <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>FEATURES</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4 wow fadeInLeft m-b-lg text-center">
+        <i class="fa fa-link features-icon"></i>
+        <h2>Connect the Blockchain World and the AI World</h2>
+        <div class="text-left">
+          <p>The first step in sharing AI is how we build a service that connects different AI services through Blockchain and how to build a bridge between the Blockchain smart contract world and the AI world for user benefit. </p>
+          <p>Atmatrix's second step is to get more AI and smart contract linked to the service, rather than part of the participants or platform in the center, including more open and unlimited access to AI, and more blockchain network so the off-chain platform in the first phase will evolve into a stand-alone blockchain platform, token contract in the first phase will transfer to the independent main blockchain and become to change as the main ATT token. This independent main blockchain network, will include all the different DBot nodes.
+</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 wow fadeInUp m-b-lg text-center">
+        <i class="fa fa-american-sign-language-interpreting features-icon"></i>
+        <h2>Trustless AI Interoperability</h2>
+        <div class="text-left">
+          <p>Compared with the traditional AI Service, the AI system in Atmatrix is more easy to deploy. Join AtmatrixNetwork is very simple:</p>
+          <ul>
+            <li>Packaging the existing AI Service as API and Schema provided by Atmatrix</li>
+            <li>Develop DBot Oracle program, access AI Service, and deployed to Atmatrix multiple Oracle Relay Server.</li>
+            <li>Develop agents that call AI service smart contract, define prices and other parameters, and deploy and register to Atmatrix's AI Service management smart contract.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-4 wow fadeInRight m-b-lg text-center">
+        <i class="fa fa-cubes features-icon"></i>
+        <h2>Open Platform</h2>
+        <div class="text-left">
+          <p>ATMaxtrix is an Open Platform that can be extended with Smart Contract to implement interaction and collaboration with other Ethereum-based DApps.</p>
+          <p>ATMaxtrix's open source features enable third-party developers to build transactionable applications better on Platform. The Platform can support multiple applications.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section id="scenario" class="scenario navy-section">
+    <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>USE CASES</h1>
+      </div>
+    </div>
+
+    <div class="row m-t-lg">
+      <div class="col-md-6 wow fadeInLeft">
+        <%= image_tag "r1.png", class: "img-responsive" %>
+      </div>
+
+      <div class="col-md-6 wow fadeInRight">
+        <h2>Decentralized Robots (DBots)</h2>
+        <p>Decentralization is one of the characteristics of the Atmatrix blockchain. The Atmatrix blockchain develops different modules for different systems and users to simplify the preparation of development and to facilitate the DBots and DApps development.</p>
+        <p>With the introduction of incentive mechanisms and sharing economy, the Atmatrix blockchain will change the current application market and business model. The Atmatrix DBots and DApps marketplace can include decentralized social network, storage, DNS, and computing services.</p>
+
+        <h2>Industry Oriented</h2>
+        <p>Atmatrix provides support for business development by using industry focused consensus mechanism and incorporating regulatory requirements.</p>
+        <p>Atmatrix also can support many industry application requirements, such as Finance, Logistics, Supply chain, Social and gaming, Charity, Digital assets, Stocks, etc.</p>
+      </div>
+    </div>
+
+    <div class="row m-t-lg">
+      <div class="col-md-6 wow fadeInLeft">
+        <h2>Smart Contract Control of AI as a Service</h2>
+        <p>For example, an insurance-related contract needs to call the AI to obtain the weather conditions (temperature, disaster probability) of Shanghai next month to help the insurance contract complete the weather-related odds in the region, and follow-up insurance Will be automatically executed according to this odds. Because the Smart Contract is deterministic in every node in a network such as Ethereum, any deterministic errors can result in the failure of the Network Consensus, so that the deterministic Smart Contracts executed by the nodes can not invoke the external service directly. They will receive external AI information and data by performing a collection of information from the Account elected by Smart Contract on the chain and performing the Off-chain Consensus process. Smart Contract will have the high timeliness and reliability of external information due to the bridge provided by Atmatrix to AI Service.</p>
+
+      </div>
+
+      <div class="col-md-6 wow fadeInRight">
+        <%= image_tag "r2.png", class: "img-responsive" %>
+      </div>
+    </div>
+
+
+    <div class="row m-t-lg">
+      <div class="col-md-6 wow fadeInLeft">
+        <%= image_tag "r3.png", class: "img-responsive" %>
+      </div>
+
+      <div class="col-md-6 wow fadeInRight">
+        <h2>AI-Based Smart Contract Decentralized Governance</h2>
+        <p>Aragon Network proposed a Decentralized judicial arbitration mechanism based on Smart Contract. This case will be further refined on this basis to provide more efficient, efficient and fair and transparent support to Judent in Decentralized Judicial Arbitration. From the two aspects, the use of AI more efficient fact data and evidence to obtain, the use of Off-chain Consensus in the AI ​​data on the basis of more transparent conclusion of the arbitration. AI can completely replace the human may also be controversial, but because the process of human decision making in the black box of the brain, there are a lot of uncertainty and not credible, AI reason they are good at learning and Blockchain Deterministic areas are better than humans, and future decisions by the Decentralized Autonomous Organizations (DAO) will most likely be replaced by AI, but before that, Atmatrix's DBot Account can still retain the "judge" role, with classes Aragon Of the system remains compatible, but the judge will be able to be replaced by AI.</p>
+        <p>Blockchain Network emphasizes certainty, certainty and trust and low risk. AI replacement arbitration judges will bring certainty to enhance the network's trust and reduce system risk.</p>
+      </div>
+    </div>
+
+    <div class="row m-t-lg">
+      <div class="col-md-6 wow fadeInLeft">
+        <h2>AI Service Interoperability</h2>
+        <p>Atmatrix hopes to provide interoperability between AI Service for this future Atmatrix. When you need to complete a complex AI task, through the operation of other AI Service to work together to complete the most economical and feasible way. In Atmatrix, AI Service interoperability is through Smart Contract and DBot Platform to implement, Register in AtmatrixRegister table Smart Contract in the AI Service has been standardized, other AI Service call only pay a certain fee, can be called The Because Atmatrix is open, without mutual trust and without authorization, AtmatrixNetwork can also be understood as the Network infrastructure and value switching network between the AI Service Provider and User.</p>
+      </div>
+
+      <div class="col-md-6 wow fadeInRight">
+        <%= image_tag "r4.png", class: "img-responsive" %>
+      </div>
+    </div>
+
+
+    <div class="row m-t-lg">
+      <div class="col-md-6 wow fadeInLeft">
+        <%= image_tag "r5.png", class: "img-responsive" %>
+      </div>
+
+      <div class="col-md-6 wow fadeInRight">
+        <h2>Other Application Scenarios</h2>
+        <ul>
+          <li>1: the Atmatrix blockchain technology is applied to smart contracts</li>
+          <li>2: the Atmatrix blockchain technology is applied to intelligent manufacturing</li>
+          <li>3: the Atmatrix blockchain technology is used in intelligent robots</li>
+          <li>4: the Atmatrix blockchain technology is applied to intelligent customer service</li>
+          <li>5: the Atmatrix blockchain technology is used in intelligent securities trading</li>
+          <li>6: the Atmatrix blockchain technology is applied to intelligent investment consultants</li>
+          <li>7: the Atmatrix blockchain technology is applied to intelligent digital drafts</li>
+          <li>8: the Atmatrix blockchain technology is applied to intelligent valuation of properties</li>
+          <li>9: the Atmatrix blockchain technology is applied to intelligent Internet of things</li>
+          <li>10: the Atmatrix blockchain technology is applied to intelligent logistics management</li>
+        </ul>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="roadmap" class="roadmap gray-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>ROADMAP</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+            <div id="vertical-timeline" class="vertical-container light-timeline center-orientation">
+                <div class="vertical-timeline-block wow fadeInLeft">
+                    <div class="vertical-timeline-icon hl-bg">
+                        <i class="fa fa-briefcase"></i>
+                    </div>
+
+                    <div class="vertical-timeline-content">
+                        <h2>Kick Start</h2>
+                        <p>Atmatrix Project Starts</p>
+                        <span class="vertical-date"> <small>2016.10</small> </span>
+                    </div>
+                </div>
+
+                <div class="vertical-timeline-block wow fadeInRight">
+                    <div class="vertical-timeline-icon hl-bg">
+                        <i class="fa fa-file-text"></i>
+                    </div>
+
+                    <div class="vertical-timeline-content">
+                        <h2>Whitepaper</h2>
+                        <p>Whitepaper Draft & Review</p>
+                        <a href="#resource" class="page-scroll btn btn-xs btn-primary"> Read</a>
+                        <span class="vertical-date"> <small>2017.06</small> </span>
+                    </div>
+                </div>
+
+                <div class="vertical-timeline-block wow fadeInLeft">
+                    <div class="vertical-timeline-icon hl-bg">
+                        <i class="fa fa-cogs"></i>
+                    </div>
+
+                    <div class="vertical-timeline-content">
+                        <h2>Prototyping</h2>
+                        <p>Atmatrix Prototyping</p>
+                        <span class="vertical-date"> <br> <small>2017.06</small> </span>
+                    </div>
+                </div>
+
+
+                <div class="vertical-timeline-block wow fadeInRight">
+                    <div class="vertical-timeline-icon hl-bg">
+                        <i class="fa fa-first-order"></i>
+                    </div>
+
+                    <div class="vertical-timeline-content">
+                        <h2>Pre-ICO</h2>
+                        <p>Completed pre-ICO among angel investors, community KOLs</p>
+                        <span class="vertical-date"> <small>2017.07</small> </span>
+                    </div>
+                </div>
+
+                <div class="vertical-timeline-block wow fadeInLeft">
+                    <div class="vertical-timeline-icon hl-bg">
+                        <i class="fa fa-bullhorn"></i>
+                    </div>
+
+                    <div class="vertical-timeline-content">
+                        <h2>ICO Plan Announcement</h2>
+                        <p>Announce detailed ICO schedule</p>
+                        <a href="#ico" class="page-scroll btn btn-xs btn-primary"> READ</a>
+                        <span class="vertical-date"> <br> <small>2017.08</small> </span>
+                    </div>
+                </div>
+
+                <div class="vertical-timeline-block wow fadeInRight">
+                    <div class="vertical-timeline-icon hl-bg">
+                        <i class="fa fa-sitemap"></i>
+                    </div>
+
+                    <div class="vertical-timeline-content">
+                        <h2>Atmatrix Foundation</h2>
+                        <p>Atmatrix Foundation was established in Singapore</p>
+                        <span class="vertical-date"> <small>2017.08</small> </span>
+                    </div>
+                </div>
+
+                <div class="vertical-timeline-block wow fadeInLeft">
+                    <div class="vertical-timeline-icon hl-bg">
+                        <i class="fa fa-file-text-o"></i>
+                    </div>
+
+                    <div class="vertical-timeline-content">
+                        <h2>Rules of Governance</h2>
+                        <p>Elect board directors, draft and review governance articles of foundation.</p>
+                        <span class="vertical-date"> <br> <small>2017.09</small> </span>
+                    </div>
+                </div>
+
+                <div class="vertical-timeline-block wow fadeInRight">
+                    <div class="vertical-timeline-icon hl-bg">
+                        <i class="fa fa-users"></i>
+                    </div>
+
+                    <div class="vertical-timeline-content">
+                        <h2>ICO</h2>
+                        <p>4 week ICO of ATT (Atmatrix Token) coin</p>
+                        <a href="#ico" class="page-scroll btn btn-xs btn-primary"> DETAIL</a>
+                        <span class="vertical-date"> <small>2017.08-2017.09</small> </span>
+                    </div>
+                </div>
+
+                <div class="vertical-timeline-block wow fadeInLeft">
+                    <div class="vertical-timeline-icon hl-bg">
+                        <i class="fa fa-laptop"></i>
+                    </div>
+
+                    <div class="vertical-timeline-content">
+                        <h2>Open Demo</h2>
+                        <p>Phase one development will be on Ethereum, demonstrating EVM based smart contract demo program. </p>
+                        <a href="#resource" class="page-scroll btn btn-xs btn-primary"> DETAIL</a>
+                        <span class="vertical-date"> <br> <small>2017.10</small> </span>
+                    </div>
+                </div>
+
+                <div class="vertical-timeline-block wow fadeInRight">
+                    <div class="vertical-timeline-icon hl-bg">
+                        <i class="fa fa-paper-plane"></i>
+                    </div>
+
+                    <div class="vertical-timeline-content">
+                        <h2>First Round Open Test</h2>
+                        <p>First round open testing</p>
+                        <span class="vertical-date"> <small>2017.11</small> </span>
+                    </div>
+                </div>
+
+                <div class="vertical-timeline-block wow fadeInLeft">
+                    <div class="vertical-timeline-icon hl-bg">
+                        <i class="fa fa-rocket"></i>
+                    </div>
+
+                    <div class="vertical-timeline-content">
+                        <h2>Phase One Launch</h2>
+                        <p>Launch Phase One Software</p>
+                        <span class="vertical-date"> <br> <small>TBC</small> </span>
+                    </div>
+                </div>
+
+                <div class="vertical-timeline-block wow fadeInRight">
+                    <div class="vertical-timeline-icon hl-bg">
+                        <i class="fa fa-paper-plane"></i>
+                    </div>
+
+                    <div class="vertical-timeline-content">
+                        <h2>Second Round Open Test</h2>
+                        <p>Second round open testing</p>
+                        <span class="vertical-date"> <small>TBC</small> </span>
+                    </div>
+                </div>
+
+                <div class="vertical-timeline-block wow fadeInLeft">
+                    <div class="vertical-timeline-icon hl-bg">
+                        <i class="fa fa-rocket"></i>
+                    </div>
+
+                    <div class="vertical-timeline-content">
+                        <h2>Phase Two Launch</h2>
+                        <p>Launch Phase Two Software</p>
+                        <span class="vertical-date"> <br> <small>TBC</small> </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 wow fadeInLeft">
+          <h2>Phase 1: Ethereum-Based Atmatrix DApp and DBot Platform</h2>
+          <ul>
+            <li>Service Management contract</li>
+            <li>Account Management contract</li>
+            <li>Token contract</li>
+            <li>Governance Contracts</li>
+            <li>Payment of contracts</li>
+            <li>Split contract</li>
+          </ul>
+        </div>
+        <div class="col-md-6 wow fadeInRight">
+          <h2>Phase 2: DBot Blockchain Platform</h2>
+          <ul>
+            <li>DBot Blockchain supports EVM-compliant Smart Contract</li>
+            <li>Improved DPOS Consensus Algorithms</li>
+            <li>Improved EOS fee broadband traffic control</li>
+            <li>Implementation: Graphene (or EOS) + EVM</li>
+            <li>Smart contracts and messaging functionality (based on Ethereum 2.0 and EOS) Group designation of AI Service (grouped by Provider), and each part of the DBotService group Off-chain Consensus is transferred to the chain. </li>
+            <li>The ATM Token migration to DBot Blockchain as the primary token</li>
+            <li>DBot Account migration to DBot Blockchain</li>
+            <li>DBotService managment Contract migration to DBot Blockchain Contract</li>
+            <li>Develop a corresponding Interoperability Smart Contract for different EVM-compliant Smart Contract Platforms to provide interoperability between different Blockchain Platform Smart Contracts (similar to Smart Contract and AI Service)</li>
+            <ul>
+            <li>RSK Interoperability Contract</li>
+            <li>Qtum interoperability contract</li>
+            <li>EOS interoperability contract</li>
+            </ul>
+            <li>Governance: System level embedded AI voting governance Contract</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="team" class="team gray-section">
+    <div class="container">
+      <div class="row">
+        <div class=“col-md-12”>
+          <h1>TEAM</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 wow fadeInLeft">
+          <div class="team-member">
+            <%= image_tag "team/gaoqingzhong.jpg", class: "img-responsive img-circle img-small" %>
+            <h4>Qing Zhong, Gao</h4>
+            <p class="text-left">Years experiences of strategic planning in IT and CT industry.  Was responsible for incubator center.  Angel investor of several well known blockchain projects.  Master degree of Computer Science from SJTU, major in Artificial Intelligence. </p>
+            <ul class="list-inline social-icon">
+              <li><a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="col-md-4 wow fadeInUp">
+          <div class="team-member">
+            <%= image_tag "team/alien.jpg", class: "img-responsive img-circle img-small" %>
+            <h4>Lin Lin, Li</h4>
+            <p class="text-left">AI expert, specialized in natural language processing, has completed a number of AI projects including the contract text semantic understanding and other projects.  Formally worked in Microsoft Artificial Intelligence Laboratory, Germany DFKI Artificial Intelligence Laboratory and Baidu Artificial Intelligence Laboratory.  Obtained Doctor Degree from Saarland University, Germany, major in Artificial Intelligence.</p>
+            <ul class="list-inline social-icon">
+              <li><a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-4 wow fadeInRight">
+          <div class="team-member">
+            <%= image_tag "team/liujun.jpg", class: "img-responsive img-circle img-small" %>
+            <h4>Jun, Liu</h4>
+            <p class="text-left">Chief Architect in Big Data and Architect Intelligence business.  As an old hand, he has completed several projects in fintech big data and AI industry.  Formally worked in Tencent, specially in data mining and analysis.  Master degree from SJTU, major in Artificial Intelligence</p>
+            <ul class="list-inline social-icon">
+              <li><a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 wow fadeInLeft">
+          <div class="team-member">
+            <%= image_tag "team/alien.jpg", class: "img-responsive img-circle img-small" %>
+            <h4>Xiao Yin, Wang</h4>
+            <p class="text-left">Blockchain technology export, one of the core developer of BitShares 1.0 software, EEA China representative, senior developer in Ethereum community.  Had successful experience in migrating google V8 engine to Graphene based blockchain project.  Has rich exprience in Virtual Machine development, expert in blockchain technology.  Graduated from Nanjing University, major in Mathematics.</p>
+            <ul class="list-inline social-icon">
+              <li><a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-4 wow fadeInUp">
+          <div class="team-member">
+            <%= image_tag "team/qianxiaodong.jpg", class: "img-responsive img-circle img-small" %>
+            <h4>Xiao Dong, Qian</h4>
+            <p class="text-left">Blockchain technology expert, full stack developer.  Bitcoin enthusiast, involved in development work of various projects since 2011, specialized in graphene based blockchain technology and EVM based smart contract.  Graduated from SJTU, major in Internatonal Trade.</p>
+            <ul class="list-inline social-icon">
+              <li><a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="col-md-4 wow fadeInRight">
+          <div class="team-member">
+            <%= image_tag "team/yangbo.jpg", class: "img-responsive img-circle img-small" %>
+            <h4>Bo, Yang</h4>
+            <p class="text-left">8 years experiences of software development in finance & fin-tech industry.  Formally worked in Citi Bank, lu.com.  Specialized in system analysis / architecture design.  Master degree from SJUT, major in Computer Science.</p>
+            <ul class="list-inline social-icon">
+              <li><a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 wow fadeInLeft">
+          <div class="team-member">
+            <%= image_tag "team/alien.jpg", class: "img-responsive img-circle img-small" %>
+            <h4>Henry</h4>
+            <p class="text-left">MBA from SFDU, 12 years experiences of strategic planning / investment / industry integration.  Led and founded China IoT Industry Alliance and community.  Has rich experiences of eco system building in IT and CT industry.</p>
+            <ul class="list-inline social-icon">
+              <li><a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-4 wow fadeInUp">
+          <div class="team-member">
+            <%= image_tag "team/julian.jpg", class: "img-responsive img-circle img-small" %>
+            <h4>Julian</h4>
+            <p class="text-left">&nbsp;</p>
+            <ul class="list-inline social-icon">
+              <li><a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-4 wow fadeInRight">
+          <div class="team-member">
+            <%= image_tag "team/liubin.jpg", class: "img-responsive img-circle img-small" %>
+            <h4>Bin, Liu</h4>
+            <p class="text-left">
+             Shanghai University of Finance and Economics, Ph.D. in investment economics.  Long term engagement in financial research for Shanghai Decision Making Advisory Board, focusing on financial technology, blockchain, artificial intelligence development</p>
+            <ul class="list-inline social-icon">
+              <li><a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-4 wow fadeInLeft">
+          <div class="team-member">
+            <%= image_tag "team/caroline.jpg", class: "img-responsive img-circle img-small" %>
+            <h4>Caroline</h4>
+            <p class="text-left">
+             Has been responsible for a variety of event planning, organized diversified line of onsite events to help achieve marketing campaign goal.  Specialized in promotion execution of internet KOL and e-sports events, has rich experiences in marketing management. Graduated from Shanghai Normal University, major in management.</p>
+            <ul class="list-inline social-icon">
+              <li><a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-4 wow fadeInUp">
+          <div class="team-member">
+            <%= image_tag "team/zhouqian.jpg", class: "img-responsive img-circle img-small" %>
+            <h4>Jing, Zhou</h4>
+            <p class="text-left">Marketing manager for several internet projects.  Has rich experiences in marketing, product management.  Management bachelor degree from Nanjing University</p>
+            <ul class="list-inline social-icon">
+              <li><a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class=“col-md-12”>
+          <h1>ACADEMIC ADVISERS</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 wow fadeInLeft">
+          <div class="team-member">
+            <%= image_tag "team/meihong.jpg", class: "img-responsive img-circle img-small" %>
+            <h4>NA. Hong, Mei</h4>
+            <p class="text-left">
+              Academician of the Chinese Academy of Sciences, Academician of the Academy of Sciences in the Developing Countries, IEEE Fellow of the International Society of Electrical and Electronics Engineering, Professor, Famous software expert and scholar, Open Source Software Community advocate</p>
+            <ul class="list-inline social-icon">
+              <li><a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-4 wow fadeInUp">
+          <div class="team-member">
+            <%= image_tag "team/huangheyan.jpg", class: "img-responsive img-circle img-small" %>
+            <h4>Prof. He Yan, Huang</h4>
+            <p class="text-left">Vice President of China Society of Artificial Intelligence, Vice Chairman of China Chinese Information Society, Vice President of China Software Industry Association; Natural Language Processing and Machine Translation experts and scholars, artificial intelligence community advocates</p>
+            <ul class="list-inline social-icon">
+              <li><a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="col-md-4 wow fadeInRight">
+          <div class="team-member">
+            <%= image_tag "team/yaotianfang.jpg", class: "img-responsive img-circle img-small" %>
+            <h4>Prof. Tian Fang, Yao</h4>
+            <p class="text-left">
+              Artificial Intelligence and Natural Language experts and scholars, Deputy Director of Sino-German Joint Laboratory of Language and Technology. Main research areas include emotion mining, machine learning, natural language generation, machine translation, information indexing</p>
+            <ul class="list-inline social-icon">
+              <li><a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 wow fadeInLeft">
+          <div class="team-member">
+            <%= image_tag "team/zhupinpin.jpg", class: "img-responsive img-circle img-small" %>
+            <h4>Pin Pin, Zhu</h4>
+            <p class="text-left">Founder of xiaoi.com (Xiao i Robot)</p>
+            <ul class="list-inline social-icon">
+              <li><a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-4 wow fadeInUp">
+          <div class="team-member">
+            <%= image_tag "team/jizhoudong.jpg", class: "img-responsive img-circle img-small" %>
+            <h4>Zhou Dong, Ji</h4>
+            <p class="text-left">Blockchain expert, Deputy Secretary of Blockchain Forum of Ministry of Industry and Information Technology</p>
+            <ul class="list-inline social-icon">
+              <li><a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="col-md-4 wow fadeInRight">
+          <div class="team-member">
+            <%= image_tag "team/chenshixin.jpg", class: "img-responsive img-circle img-small" %>
+            <h4>Shi Xin, Chen</h4>
+            <p class="text-left">Co-founder and COO of Ahaschool, Master degree of Computer Sciences from SJTU.  18 years experiences in internet startup, strategic planning, operation, product management, technology areas.</p>
+            <ul class="list-inline social-icon">
+              <li><a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 wow fadeInLeft">
+          <div class="team-member">
+            <%= image_tag "team/lisong.jpg", class: "img-responsive img-circle img-small" %>
+            <h4>Song, Li</h4>
+            <p class="text-left">Co-founder and CTO of Seattle based Sky Science and Technology, white hat hacker. In his nearly 15 years of career, Li Song is committed to the study of large-scale software and internet systems, including compilers, virtual machines, global-scale web services</p>
+            <ul class="list-inline social-icon">
+              <li><a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+<% if false %>
+      <div class="row">
+        <div class=“col-md-12”>
+          <h1>ANGEL INVESTORS</h1>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-4 wow fadeInLeft">
+          <div class="team-member">
+            <%= image_tag "team/alien.jpg", class: "img-responsive img-circle img-small" %>
+            <h4>Qing, Zhou</h4>
+            <p class="text-left">Founder and Managing Partner of Long Qing Capital, has invested several start up companies in AI and IoT industry</p>
+            <ul class="list-inline social-icon">
+              <li><a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-4 wow fadeInUp">
+          <div class="team-member">
+            <%= image_tag "team/inb.jpg", class: "img-responsive img-circle img-small" %>
+            <h4>INBlockchain</h4>
+            <p class="text-left">Co-founded by Xiao Lai, Li and Laomao, focused in incubation of blockchain related projects.</p>
+            <ul class="list-inline social-icon">
+              <li><a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-4 wow fadeInRight">
+          <div class="team-member">
+            <%= image_tag "team/hanfeng.jpg", class: "img-responsive img-circle img-small" %>
+            <h4>Feng, Han</h4>
+            <p class="text-left">Tutor of iCenter, Qing Hua Univesity, Secretary of Asia DACA Blockchain Association, famous blockchain evangelist</p>
+            <ul class="list-inline social-icon">
+              <li><a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-4 wow fadeInLeft">
+          <div class="team-member">
+            <%= image_tag "team/juxie.jpg", class: "img-responsive img-circle img-small" %>
+            <h4>Jia Ling, Liu (bitcrab)</h4>
+            <p class="text-left">Famous China earliest blockchain evangelist and investor, founding member of BitAngelsClub.  Early investor of BitShares and Ethereum, committee member of BitShares.</p>
+            <ul class="list-inline social-icon">
+              <li><a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-4 wow fadeInUp">
+          <div class="team-member">
+            <%= image_tag "team/zhangshousong.jpg", class: "img-responsive img-circle img-small" %>
+            <h4>Liang, Zhou</h4>
+            <p class="text-left">Investment Director of Shang Ya Fund, has rich investment experience in IoT and AI industries</p>
+            <ul class="list-inline social-icon">
+              <li><a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-4 wow fadeInRight">
+          <div class="team-member">
+            <%= image_tag "team/chuxiahu.jpg", class: "img-responsive img-circle img-small" %>
+            <h4>Ying, Gu</h4>
+            <p class="text-left">Founder of ViewFin, Bitcoin Lifetime Member</p>
+            <ul class="list-inline social-icon">
+              <li><a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-4 wow fadeInLeft">
+          <div class="team-member">
+            <%= image_tag "team/baicai.jpg", class: "img-responsive img-circle img-small" %>
+            <h4>Qiang Liu</h4>
+            <p class="text-left">BitShares evangelist, founder of HelloBTS community, founder of YOYOW project</p>
+            <ul class="list-inline social-icon">
+              <li><a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row m-t-lg">
+       <p>And there are many other early investors are not listed, including public listed company principles, traditional VC partners, corporate executives, crypto community KOL and blockchain technology experts and investors.</p>
+      </div>
+<% end %>
+
+    </div>
+  </section>
+
+
+
+  <section id="ico" class="ico">
+    <div class = "container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>ICO</h1>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="ico-status finished text-center" style="display:block;">
+          <h1>ICO has finished</h1>
+          <p>Thanks for your support</p>
+        </div>
+      </div>
+
+
+      <div class = "row">
+          <div class="col-md-12">
+            <p>The financial management of The Atmatrix Blockchain Foundation includes daily financial management and digital asset management. The financial management is outsourced, including developer’s travel expenses, staff salaries, office expense, daily operation expenses, etc. Digital assets are managed by the Judgement Committee or other authorized personnel, including wallet management, transferred digital assets, other digital currencies switches, digital currency withdrawals, etc.</p>
+
+            <h2>Funding Source</h2>
+            <p>The specific financial and business requirements that will be evaluated differently from other segments are typically in the early stages of development and may not be generating significant revenue. The major income is from seed round investment and the Crowdsale. Donators need to hold ATT tokens in order to be authorized to use Atmatrix and its DBots/ DApps.</p>
+          </div>
+      </div>
+
+      <div class= "row">
+        <div class="col-md-12">
+          <h2>Initial ATT token allocation</h2>
+
+          <p>80% of the tokens will be eventually allocated the community and investors; 20%  tokens will be allocated to the foundation initiator, early backers and the development team.</p>
+        </div>
+
+        <div class="col-md-offset-2 col-md-8 m-t-lg">
+          <div class="text-center">
+            <canvas id="allocationChart" height="200"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <div class="row m-t-lg m-b-lg">
+        <table class="table table-responsive" >
+          <tr><th>%</th><th>Usage</th><th>Explanation</th></tr>
+          <tr>
+            <td>60</td>
+            <td><p>ATT token Crowdsale (two round ICO)</p></td>
+            <td><p>The fund raised in the crowdsale will be used for the operation of the Foundation, including development, administration, marketing, financial and legal consultancy, etc.</p></td>
+          </tr>
+          <tr>
+            <td>20</td>
+            <td><p>Foundation initiators, early backers and the development team</p></td>
+            <td><p>Foundation initiators, early backers and the development team are rewarded with ATM tokens due to the effort, resources, and the technology they contributed to the development of Atmatrix.</p></td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td><p>Business development</p></td>
+            <td><p>Select the appropriate industries to implement the Atmatrix blockchain technology, including strategic planning, project support and token swap.</p></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td><p>Academic research, education, and market expansion</p></td>
+            <td><p>The fund will be used for sponsorship of academic research, education materials for developers, raising awareness of the Atmatrix technology, and contribution to open source communities, etc.</p></td>
+          </tr>
+        </table>
+
+      </div>
+
+
+    </div>
+  </section>
+
+  <section id="resource" class="resource text-center gray-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>RESOURCES</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 m-b-lg wow fadeInLeft">
+          <i class="fa fa-file-pdf-o features-icon"></i>
+          <h2>Whitepaper</h2>
+          <p class="m-t-lg"><a href="dist/resource/whitepaper-v0.2.1-draft-en.pdf" target="_blank" class="btn btn-xs btn-primary"> READ</a></p>
+        </div>
+
+        <div class="col-md-6 m-b-lg wow fadeInRight">
+          <i class="fa fa-laptop features-icon"></i>
+          <h2>Online Demo</h2>
+          <p>Coming soon</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="mailing_list" class="mailing_list">
+    <div class="container">
+    <div class="row">
+      <div class="col-md-12 wow fadeInUp">
+        <h1>KEEP UPDATED</h1>
+      </div>
+    </div>
+
+    <form id="mailing-list-form" action="//atmatrix.us16.list-manage.com/subscribe/post?u=891cb58e64f257626680a69d3&amp;id=65e18a5191" method="post" target="_blank">
+      <input id="email" placeholder="Email address" name="EMAIL" type="email" required="true">
+      <button class="submit" type="submit">SUBSCRIBE</button>
+      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_891cb58e64f257626680a69d3_65e18a5191" tabindex="-1" value=""></div>
+      <div class="hint"><strong>Subscribe to receive</strong> newsletter.</div>
+
+      <!-- social links -->
+      <div class="m-t-lg">
+        <ul class="contact">
+          <li><i class="fa fa-github"></i> <a href="//github.com/atmatrix" target="_blank">github.com/<br />Atmatrix</a></li>
+          <li><i class="fa fa-slack"></i> <a href="//slack.atmatrix.org" target="_blank">slack.atmatrix.org</a></li>
+          <li><i class="fa fa-telegram"></i> <a href="https://t.me/joinchat/ERsuago4xjtA81X1e4G-6w" target="_blank">@atmatrix</a></li>
+          <li><i class="fa fa-wechat"></i> <a href="javascript:void()">ATMatrixI</a></li>
+          <li><i class="fa fa-qq"></i> <a href="javascript:void();">652509213</a></li>
+          <li><i class="fa fa-envelope"></i> <a href="mailto:contact@atmatrix.org">contact<br />@atmatrix.com</a></li>
+        </ul>
+      </div>
+      <!-- end of social links -->
+
+    </form>
+    </div>
+  </section>

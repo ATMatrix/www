@@ -1,0 +1,46 @@
+<% rp = request.path == "/" ? "" : "/" %>
+    <!-- navbar -->
+    <div class="navbar-wrapper">
+            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <div class="navbar-header page-scroll">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only"><%= t('site.nav.toggle') %></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="/#page-top">
+                          <%= image_tag "logo@150.png", alt: "Atmatrix" %>
+                        </a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a class="page-scroll" href="<%= rp %>#about"><%= t('site.nav.home') %></a></li>
+                            <li><a class="page-scroll" href="<%= rp %>#feature"><%= t('site.nav.features') %></a></li>
+                            <li><a class="page-scroll" href="<%= rp %>#scenario"><%= t('site.nav.use_case') %></a></li>
+                            <li><a class="page-scroll" href="<%= rp %>#roadmap"><%= t('site.nav.roadmap') %></a></li>
+                            <li><a class="page-scroll" href="<%= rp %>#team"><%= t('site.nav.team') %></a></li>
+                            <li><a class="page-scroll" href="<%= rp %>#ico"><%= t('site.nav.ico') %></a></li>
+                            <% if @show_blog %>
+                            <li><a class="page-scroll" href="/posts"><%= t('site.nav.blog') %></a></li>
+                            <% end %>
+                            <li><a class="page-scroll" href="<%= rp %>#resource"><%= t('site.nav.resources') %></a></li>
+                            <li class="dropdown" style="margin-left:30px;">
+                              <a href="#" class="dropdown-toggle" id="dropdownLanguage" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <%= image_tag "blank.gif", class: "flag flag-cn", alt: "简体中文" %>
+                                <i class="fa fa-angle-down"></i>
+                              </a>
+                              <ul class="dropdown-menu dropdown-menu-right " aria-labelledby="dropdownLanguage">
+                                <li>
+                                  <a href="javascript:set_locale('zh-CN')"><%= image_tag "blank.gif", class: "flag flag-cn", alt: "简体中文" %> 简体中文</a>
+                                </li>
+                                <li><a href="javascript:set_locale('en')"><%= image_tag "blank.gif", class: "flag flag-us", alt: "English" %> English</a></li>
+                              </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+    </div>
+    <!-- end of navbar -->

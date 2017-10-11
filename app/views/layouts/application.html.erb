@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+               AAA        TTTTTTTTTTTTTTTTTTTTTTMMMMMMMM               MMMMMMMM                        tttt                            iiii
+              A:::A       T:::::::::::::::::::::M:::::::M             M:::::::M                     ttt:::t                           i::::i
+             A:::::A      T:::::::::::::::::::::M::::::::M           M::::::::M                     t:::::t                            iiii
+            A:::::::A     T:::::TT:::::::TT:::::M:::::::::M         M:::::::::M                     t:::::t
+           A:::::::::A    TTTTTT  T:::::T  TTTTTM::::::::::M       M::::::::::M aaaaaaaaaaaaa ttttttt:::::ttttttt  rrrrr   rrrrrrrrr iiiiiiixxxxxxx      xxxxxxx
+          A:::::A:::::A           T:::::T       M:::::::::::M     M:::::::::::M a::::::::::::at:::::::::::::::::t  r::::rrr:::::::::ri:::::i x:::::x    x:::::x
+         A:::::A A:::::A          T:::::T       M:::::::M::::M   M::::M:::::::M aaaaaaaaa:::::t:::::::::::::::::t  r:::::::::::::::::ri::::i  x:::::x  x:::::x
+        A:::::A   A:::::A         T:::::T       M::::::M M::::M M::::M M::::::M          a::::tttttt:::::::tttttt  rr::::::rrrrr::::::i::::i   x:::::xx:::::x
+       A:::::A     A:::::A        T:::::T       M::::::M  M::::M::::M  M::::::M   aaaaaaa:::::a     t:::::t         r:::::r     r:::::i::::i    x::::::::::x
+      A:::::AAAAAAAAA:::::A       T:::::T       M::::::M   M:::::::M   M::::::M aa::::::::::::a     t:::::t         r:::::r     rrrrrri::::i     x::::::::x
+     A:::::::::::::::::::::A      T:::::T       M::::::M    M:::::M    M::::::Ma::::aaaa::::::a     t:::::t         r:::::r           i::::i     x::::::::x
+    A:::::AAAAAAAAAAAAA:::::A     T:::::T       M::::::M     MMMMM     M::::::a::::a    a:::::a     t:::::t    tttttr:::::r           i::::i    x::::::::::x
+   A:::::A             A:::::A  TT:::::::TT     M::::::M               M::::::a::::a    a:::::a     t::::::tttt:::::r:::::r          i::::::i  x:::::xx:::::x
+  A:::::A               A:::::A T:::::::::T     M::::::M               M::::::a:::::aaaa::::::a     tt::::::::::::::r:::::r          i::::::i x:::::x  x:::::x
+ A:::::A                 A:::::AT:::::::::T     M::::::M               M::::::Ma::::::::::aa:::a      tt:::::::::::tr:::::r          i::::::ix:::::x    x:::::x
+AAAAAAA                   AAAAAATTTTTTTTTTT     MMMMMMMM               MMMMMMMM aaaaaaaaaa  aaaa        ttttttttttt rrrrrrr          iiiiiiixxxxxxx      xxxxxxx
+-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>智能矩阵 Atmatrix - 连接人工智能与区块链</title>
+
+    <%= render 'layouts/favicon' %>
+
+    <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+    <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
+
+    <script type="text/javascript">
+      var lang = "zh-CN";
+      </script>
+  </head>
+
+  <body id="page-top" class="<%= @body_class || 'landing-page' %>">
+    <div class="wechat-icon"><%= image_tag "icons/ms-icon-310x310.png" %></div>
+
+    <%= render 'layouts/navigation' %>
+
+
+    <%= render 'layouts/messages' %>
+    <%= yield %>
+
+    <%= render 'layouts/footer' %>
+  </body>
+</html>

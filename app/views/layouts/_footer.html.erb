@@ -1,0 +1,49 @@
+<% rp = request.path == "/" ? "" : "/" %>
+
+<section id="footer" class="container footer">
+      <div class="row">
+        <div class="col-md-8">
+          <ul>
+            <li><a class="page-scroll" href="<%= rp %>#about"><%= t('site.nav.home') %></a></li>
+            <li><a class="page-scroll" href="<%= rp %>#feature"><%= t('site.nav.features') %></a></li>
+            <li><a class="page-scroll" href="<%= rp %>#scenario"><%= t('site.nav.use_case') %></a></li>
+            <li><a class="page-scroll" href="<%= rp %>#roadmap"><%= t('site.nav.roadmap') %></a></li>
+            <li><a class="page-scroll" href="<%= rp %>#team"><%= t('site.nav.team') %></a></li>
+            <li><a class="page-scroll" href="<%= rp %>#ico"><%= t('site.nav.ico') %></a></li>
+            <% if @show_blog %>
+            <li><a class="page-scroll" href="/posts"><%= t('site.nav.blog') %></a></li>
+            <% end %>
+            <li><a class="page-scroll" href="<%= rp %>#resource"><%= t('site.nav.resources') %></a></li>
+          </ul>
+
+          <p class="copyright">版权所有 © 2017 保留所有权利，智能矩阵基金会</p>
+          <p class="muted"><small>ICP备案许可证编号：沪ICP备17032969号</small></p>
+        </div>
+
+        <div class="col-md-4 btm-logo">
+          <a href="/#page-top">
+            <%= image_tag "logo@150.png", alt: "Atmatrix" %>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdn.bootcss.com/wow/1.1.2/wow.min.js"></script>
+    <script src="//cdn.bootcss.com/Chart.js/2.6.0/Chart.min.js"></script>
+    <%= javascript_include_tag 'vendor', 'data-turbolinks-track' => 'reload' %>
+
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
+    <%= yield :footer %>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-102089477-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
