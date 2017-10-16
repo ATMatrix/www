@@ -22,8 +22,11 @@ body.full-height-layout #page-wrapper {
   height: 100%;
 }
 
-#page-wrapper {
-  min-height: auto;
+.page-wrapper {
+
+  padding-top:130px;
+  height:100%; width:100%;
+
 }
 
 body.boxed-layout {
