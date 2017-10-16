@@ -2,6 +2,8 @@
     <%= javascript_include_tag 'home', 'data-turbolinks-track' => 'reload' %>
 <% end -%>
 
+<% content_for :slider do -%>
+
   <div id="inSlider" class="carousel carousel-fade" data-ride="carousel" style="height:100%;">
     <div class="carousel-inner" role="listbox">
       <div class="item active hero-tw">
@@ -25,7 +27,7 @@
       </div>
     </div>
   </div>
-
+<% end -%>
 
   <section id="about" class="about navy-section m-t-lg">
     <div class="container">
@@ -949,7 +951,7 @@
         <div class="col-md-6 m-b-lg wow fadeInLeft">
           <i class="fa fa-file-pdf-o features-icon"></i>
           <h2>Whitepaper</h2>
-          <p class="m-t-lg"><a href="dist/resource/whitepaper-v0.2.1-draft-en.pdf" target="_blank" class="btn btn-xs btn-primary"> READ</a></p>
+          <p class="m-t-lg"><a href="/system/whitepaper-en.pdf?<%= Time.now.to_i %>" target="_blank" class="btn btn-xs btn-primary"> READ</a></p>
         </div>
 
         <div class="col-md-6 m-b-lg wow fadeInRight">
