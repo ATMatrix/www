@@ -10,7 +10,6 @@ class ApplicationController < ActionController::Base
   before_filter :blog_switch
 
   def set_locale
-    binding.pry
     session[:locale] = params[:locale] if params[:locale]
     session[:locale] = nil unless %w(zh-CN en).include?(session[:locale])
     I18n.locale = session[:locale] || I18n.default_locale
