@@ -36,6 +36,9 @@
     .social-icon { display:none; }
   }
 }
+.social-container {
+  margin-bottom:3em;
+}
 #ico {
   @extend .space;
 
@@ -68,5 +71,11 @@
 
   &.finished {
     color: red;
+  }
+}
+
+.comm-portal {
+  .page-wrapper {
+    padding-top:60px;
   }
 }

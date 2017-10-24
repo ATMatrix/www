@@ -7,6 +7,9 @@ Rails.application.routes.draw do
   get 'instruction' => 'home#instruction'
   get 'refund' => 'home#refund'
 
+  # namecard scan portal
+  get 'community_portal' => 'home#comm_portal'
+
   devise_for :users
   resources :users
 

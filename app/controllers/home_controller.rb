@@ -9,6 +9,9 @@ class HomeController < ApplicationController
   def instruction; end
   def refund; end
 
+  # community portal
+  def comm_portal; end
+
   def locale_redirect
     redirect_to "/?locale=#{params[:locale]}"
   end

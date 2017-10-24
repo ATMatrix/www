@@ -271,71 +271,7 @@ ul.contact {
   }
 }
 
-/* FOOTER */
 
-.footer {
-  padding: 10px 20px;
-  margin-top:5em;
-
-  ul {
-    position: relative; overflow: hidden;
-    margin-left: 0px; padding-left: 0px;
-    & > li {
-      display: inline-block; float:left;
-
-      a { padding: 5px 10px 5px 0px; }
-    }
-  }
-
-  .copyright {
-    color: grey; margin-top:3em;
-  }
-
-  .btm-logo {
-    text-align:right;
-  }
-}
-
-.footer.fixed_full {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  padding: 10px 20px;
-  background: white;
-  border-top: 1px solid $border-color;
-}
-
-.footer.fixed {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  padding: 10px 20px;
-  background: white;
-  border-top: 1px solid $border-color;
-  margin-left: $sidebar-width;
-}
-
-body.mini-navbar .footer.fixed,
-body.body-small.mini-navbar .footer.fixed {
-  margin: 0 0 0 70px;
-}
-
-body.mini-navbar.canvas-menu .footer.fixed,
-body.canvas-menu .footer.fixed {
-  margin: 0 !important;
-}
-
-body.fixed-sidebar.body-small.mini-navbar .footer.fixed {
-  margin: 0 0 0 $sidebar-width;
-}
-
-body.body-small .footer.fixed {
-  margin-left: 0;
-}
 
 /* PANELS */
 
