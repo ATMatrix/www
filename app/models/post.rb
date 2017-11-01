@@ -49,6 +49,7 @@ class Post < ActiveRecord::Base
         thumb_method :thumb
         # actually not needed in this case: default is "delete_#{field_name}" if the object responds to it
         delete_method :delete_cover
+        help "建议 1000x382"
       end
       field :publish_at, :datetime do
         help "可设置预约发布时间；如果不填表示不发布"
