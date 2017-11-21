@@ -9,6 +9,7 @@ Rails.application.routes.draw do
 
   # namecard scan portal
   get 'community_portal' => 'home#comm_portal'
+  get 'social_portal' => 'home#comm_portal'
 
   devise_for :users
   resources :users
