@@ -4,8 +4,10 @@ Rails.application.routes.draw do
 
   get 'cn' => 'home#locale_redirect', locale: 'zh-CN'
   get 'en' => 'home#locale_redirect', locale: 'en'
-  get 'instruction' => 'home#instruction'
-  get 'refund' => 'home#refund'
+  if false
+    get 'instruction' => 'home#instruction'
+    get 'refund' => 'home#refund'
+  end
 
   # namecard scan portal
   get 'community_portal' => 'home#comm_portal'
