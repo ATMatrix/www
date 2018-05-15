@@ -1,6 +1,0 @@
-node_modules
-npm-debug.log
-dist
-src/vid/*.mov
-src/images/team/Original Files/*
-deploy.sh
