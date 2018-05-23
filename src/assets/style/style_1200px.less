@@ -1,0 +1,150 @@
+@import './theme.less';
+
+@media screen and (max-width: 1200px) {
+  .home {
+    .header {
+      .content {
+        .text-wrapper {
+          margin: 0 8vw;
+        }
+  
+        .img-wrapper {
+          margin-right: 8vw;
+        }
+      }
+    }
+
+    .solutions, .benefits {
+      .content {
+        h1 {
+          margin: 8vw 0;
+        }
+
+        section {
+          .box-wrapper {
+            .box {
+              flex: 0 1 50%;
+              margin: 0 0 5vw 0;
+              padding-left: 8vw;
+
+              .bulb {
+                display: none;
+              }
+            }
+          }
+        }
+
+        .inset {
+          left: 160px;
+          top: 480px;
+        }
+      }
+    }
+
+    .case {
+      .content {
+        .containor {
+          .box-wrapper {
+            justify-content: space-between;
+            padding: 0 4vw;
+  
+            .box {
+              margin-bottom: 8vw;
+            }
+          }
+        }
+      }
+    }
+
+    .contact {
+      .content {
+        padding: 0 0 100px;
+  
+        h1 {
+          margin: 0 0 50px;
+          font-size: 36px;
+        }
+  
+        .contact-form,
+        .keep-updated {
+          flex: 1 0 50%;
+          flex: 1 0 50%;
+          padding-top: 100px;
+        }
+  
+        .contact-form {
+          .input-wrapper {
+            margin-bottom: 35px;
+  
+            input {
+              width: 365px;
+              height: 50px;
+              font-size: 18px;
+              padding: 0 25px;
+              border-radius: 25px;
+            }
+  
+            textarea {
+              width: 365px;
+              padding: 25px;
+              border-radius: 25px;
+            }
+          }
+  
+          .submit {
+            button {
+              width: 365px;
+              height: 50px;
+              border-radius: 25px;
+            }
+          }
+        }
+  
+        .line {
+          top: 100px;
+          bottom: 100px;
+        }
+  
+        .keep-updated {
+          .wrapper {
+            height: 50px;
+  
+            input {
+              width: 265px;
+              font-size: 18px;
+              padding: 0 25px;
+              border-top-left-radius: 25px;
+              border-bottom-left-radius: 25px;
+            }
+  
+            a {
+              width: 100px;
+              border-top-right-radius: 25px;
+              border-bottom-right-radius: 25px;
+            }
+          }
+  
+          .tips {
+            margin: 32px 0 95px;
+          }
+  
+          ul {
+            max-width: 515px;
+  
+            li {
+              margin: 0 16px;
+  
+              span {
+                font-size: 48px;
+              }
+  
+              p {
+                margin-top: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,143 @@
+@import './theme.less';
+
+@media screen and (max-width: 992px) {
+  .home {
+    .header {
+      height: auto;
+
+      .content {
+        padding-top: 16vw;
+
+        .text-wrapper {
+          margin: 0 5vw;
+        }
+        
+        .img-wrapper {
+          margin-right: 5vw;
+          width: 300px;
+          min-width: 250px;
+        }
+      }
+    }
+
+    .content {
+      h1 {
+        margin: 10vw 0 8vw;
+        font-size: 48px;
+      }
+    }
+
+    .cube {
+      display: none;
+    }
+
+    .solutions, .benefits {
+      .content {
+        h1 {
+          margin: 10vw 0 8vw;
+          font-size: 48px;
+        }
+
+        section {
+          padding: 0 5vw;
+
+          .box-title {
+            width: 234px;
+
+            h2 {
+              font-size: 32px;
+    
+              &::after {
+                height: 7px;
+                transform: translateY(-12px);
+              }
+            }
+          }
+
+          .box-wrapper {
+            .box {
+              margin: 0 0 5vw 0;
+              padding-left: 5vw;
+            }
+          }
+        }
+
+        .inset {
+          left: 90px;
+          top: 440px;
+          transform: scale3d(.7, .7, 1);
+        }
+      }
+    }
+
+    .case {
+      .content {
+        .containor {
+          .box-title {
+            h2 {
+              font-size: 32px;
+
+              &::after {
+                height: 7px;
+                transform: translateY(-12px);
+              }
+            }
+          }
+
+          .box-wrapper {
+            justify-content: space-around;
+            padding: 0 5vw;
+  
+            .box {
+              width: 100%;
+              margin-bottom: 8vw;
+            }
+          }
+        }
+      }
+    }
+
+    .division {
+      padding: 8vw 0;
+    }
+
+    .team {
+      .content {
+        .containor {
+          .box-title {
+            h2 {
+              margin: 0 0 8vw;
+              font-size: 32px;
+  
+              &::after {
+                transform: translateY(-12px);
+              }
+            }
+          }
+  
+          .box-wrapper {
+            .box {
+              width: 300px;
+              padding: 5vw 35px;
+              margin: 0 0 8vw;
+  
+              h3 {
+                margin: 15px 0;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .contact {
+      .content {
+        flex-direction: column;
+  
+        .line {
+          display: none;
+        }
+      }
+    }
+  }
+}

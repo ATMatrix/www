@@ -1,0 +1,23 @@
+@font_color_white: #ffffff;
+@font_color_black: #272727;
+@font_color_light_gray: #4c4c4c;
+@font_color_gray: #b4b4b4;
+@font_color_blue: #02cbff;
+
+@bg_border_bottom_start: #5bdcfe;
+@bg_border_bottom_end: #8ccdfd;
+
+.border_bottom (@deg) {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 7px;
+  transform: translateY(-15px);
+  position: absolute;
+  z-index: -1;
+  background: linear-gradient(
+    @deg,
+    @bg_border_bottom_start 0,
+    @bg_border_bottom_end 100%
+  );
+}

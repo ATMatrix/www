@@ -1,0 +1,157 @@
+@import './theme.less';
+
+
+@media screen and (max-width: 768px) {
+  .home {
+    .header {
+      .content {
+        padding: 14vw 16px 2vw;
+        justify-content: space-around;
+    
+        .text-wrapper {
+          margin: 16px 48px 32px 0;
+    
+          .title {
+            font-size: 32px;
+          }
+    
+          .des {
+            margin: 10px 0 16px 0;
+          }
+    
+          .btn {
+            width: 180px;
+            margin-top: 24px;
+    
+            a {
+              font-size: 16px;
+            }
+          }
+        }
+
+        .img-wrapper {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .content {
+      h1 {
+        margin: 32px 0 40px;
+        padding-left: 16px;
+        font-size: 32px;
+      }
+    }
+
+    .solutions, .benefits {
+      .content {
+        h1 {
+          margin: 32px 0 40px;
+          padding-left: 16px;
+          font-size: 32px;
+        }
+  
+        section {
+          padding: 0 16px;
+          flex-wrap: wrap;
+
+          .box-title {
+            margin-bottom: 2vw;
+            justify-content: flex-start;
+
+            h2 {
+              font-size: 24px;
+    
+              &::after {
+                height: 5px;
+                transform: translateY(-9px);
+              }
+            }
+          }
+  
+          .box-wrapper {
+            flex: 1 1 100%;
+            padding: 16px 16px 0;
+
+            .box {
+              flex: 1 1 100%;
+              margin: 0 0 16px 0;
+              padding-left: 0;
+            }
+          }
+        }
+
+        .inset {
+          display: none;
+        }
+      }
+    }
+
+    .case {
+      .content {
+        .containor {
+          .box-title {
+            h2 {
+              font-size: 24px;
+    
+              &::after {
+                height: 5px;
+                transform: translateY(-9px);
+              }
+            }
+          }
+
+          .box-wrapper {
+            justify-content: space-around;
+            padding: 0 32px;
+  
+            .box {
+              width: 100%;
+              padding: 16px 32px;
+              margin-bottom: 32px;
+            }
+          }
+        }
+      }
+    }
+
+    .division {
+      padding: 32px 0;
+    }
+
+    .team {
+      .content {
+        .containor {
+          .box-title {
+            h2 {
+              margin: 0 0 32px;
+              font-size: 24px;
+    
+              &::after {
+                height: 5px;
+                transform: translateY(-9px);
+              }
+            }
+          }
+  
+          .box-wrapper {
+            .box {
+              padding: 32px;
+              margin: 0 0 32px;
+  
+              h3 {
+                margin: 16px 0;
+              }
+
+              .position {
+                label {
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
