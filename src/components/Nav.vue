@@ -116,7 +116,7 @@ export default {
   },
   computed: {
     languageSelected() {
-      return this.$i18n.locale === "en" ? "ENGLISH" : "中文";
+      return this.$i18n.locale === "en" ? "中文" : "ENGLISH";
     }
   },
   mounted() {
