@@ -197,7 +197,7 @@
               <input type="email" :placeholder="contact.mail" v-model="email">
             </div>
             <div class="input-wrapper">
-              <input type="text" :placeholder="contact.theme" v-model="theme">
+              <input type="text" :placeholder="contact.theme" v-model="telephone">
             </div>
 
             <div class="input-wrapper">
@@ -244,7 +244,16 @@
                   <span :class="`icon-${ item.key }`"></span>
                   <p>{{ item.show }}</p>
                 </a>
-                <div v-else class="icon-item">
+                <div 
+                  v-else 
+                  class="icon-item" 
+                  @click="item.key === 'wechat' && (qrShow = !qrShow)"
+                >
+                  <div 
+                    class="qr-wrapper" 
+                    :class="{ show: item.key === 'wechat' && qrShow }">
+                    <img src="@/assets/images/qr.jpg" alt="">
+                  </div>
                   <span :class="`icon-${ item.key }`"></span>
                   <p>{{ item.show }}</p>
                 </div>
@@ -285,28 +294,28 @@ const getIcons = locale => [
   {
     key: "github",
     show: "Github",
-    link: "github.com/atnio"
+    link: "https://github.com/atnio"
   },
-  {
-    key: "telegram",
-    show: "Telegram",
-    link:
-      locale === "en"
-        ? "https://t.me/ATN_Blockchain_EN"
-        : "https://t.me/ATN_Blockchain"
-  },
+  // {
+  //   key: "telegram",
+  //   show: "Telegram",
+  //   link:
+  //     locale === "en"
+  //       ? "https://t.me/ATN_Blockchain_EN"
+  //       : "https://t.me/ATN_Blockchain"
+  // },
   {
     key: "wechat",
     show: "ATMatrix"
   },
-  {
-    key: "qq",
-    show: "652509213"
-  },
+  // {
+  //   key: "qq",
+  //   show: "652509213"
+  // },
   {
     key: "mail",
     show: "Email",
-    link: "contact@atn.io"
+    link: "contact@atmatrix.org"
   }
 ];
 
@@ -322,8 +331,9 @@ export default {
       subscribeEmail: "",
       name: "",
       email: "",
-      theme: "",
-      message: ""
+      telephone: "",
+      message: "",
+      qrShow: false,
     };
   },
   computed: {

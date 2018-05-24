@@ -34,7 +34,7 @@
     height: 80px;
     position: absolute;
     background: url("@{image}cube.png") no-repeat center center/contain;
-    z-index: -101;
+    z-index: -99;
   }
 
   .header {
@@ -238,9 +238,9 @@
       position: relative;
 
       .top-right {
-          top: 80px;
-          right: 0;
-        }
+        top: 80px;
+        right: 0;
+      }
 
       .bottom-left {
         bottom: 720px;
@@ -503,10 +503,10 @@
                 align-items: center;
                 justify-content: center;
                 height: 20px;
-                padding: 5px 25px;
+                padding: 3px 16px;
                 border-radius: 15px;
                 background: linear-gradient(90deg, #02c9ff 0, #4ab4fd 50%, #4ab4fd 100%);
-                font-size: 14px;
+                font-size: 12px;
                 font-weight: 600;
                 color: @font_color_white;
               }
@@ -683,6 +683,43 @@
               align-items: center;
               flex-direction: column;
               cursor: pointer;
+            }
+
+            .icon-item {
+              position: relative;
+
+              .show {
+                display: flex!important;
+              }
+
+              .qr-wrapper {
+                display: none;
+                align-items: center;
+                justify-content: center;
+                width: 400px;
+                height: 400px;
+                background: @font_color_white;
+                position: absolute;
+                transform: translateY(-105%);
+
+                img {
+                  width: 50%;
+                  height: 50%;
+                }
+
+                &:after {
+                  content: '';
+                  display: block;
+                  position: absolute;
+                  left: 50%;
+                  bottom: 0;
+                  transform: translate3d(-50%, 99%, 0);
+                  border-width: 10px;
+                  border-style: solid;
+                  border-color: transparent;
+                  border-top-color: @font_color_white;
+                }
+              }
             }
           }
         }
