@@ -189,27 +189,34 @@
       <div class="content">
         <div class="contact-form">
           <h1>{{ `${ contact.contact } ${ contact.form }` }}</h1>
-          <form action="" method="post">
+          <form 
+            ref="contactForm"
+            method="POST"
+            :action="postUrl"
+            enctype="application/x-www-form-urlencoded"
+          >
             <div class="input-wrapper">
-              <input type="text" :placeholder="contact.name" v-model="name">
+              <input name="name" type="text" :placeholder="contact.name" v-model="name">
             </div>
             <div class="input-wrapper">
-              <input type="email" :placeholder="contact.mail" v-model="email">
+              <input name="email" type="email" :placeholder="contact.mail" v-model="email">
             </div>
             <div class="input-wrapper">
-              <input type="text" :placeholder="contact.theme" v-model="telephone">
+              <input name="phone" type="text" :placeholder="contact.theme" v-model="telephone">
             </div>
 
             <div class="input-wrapper">
               <textarea 
                 rows="5"
+                name="message"
                 :placeholder="contact.message"
                 v-model="message"
               ></textarea>
             </div>
 
             <div class="submit">
-              <button>{{ contact.submit }}</button>
+              <input type="hidden" name="hs_context" :value="hs_context">
+              <button type="submit">{{ contact.submit }}</button>
             </div>
           </form>
         </div>
@@ -252,7 +259,7 @@
                   <div 
                     class="qr-wrapper" 
                     :class="{ show: item.key === 'wechat' && qrShow }">
-                    <img src="@/assets/images/qr.jpg" alt="">
+                    <img src="@/assets/images/qr.jpeg" alt="">
                   </div>
                   <span :class="`icon-${ item.key }`"></span>
                   <p>{{ item.show }}</p>
@@ -270,6 +277,7 @@
 
 <script>
 import { verifyMail } from "@/utils/util";
+import axios from 'axios';
 
 import Nav from "@/components/Nav.vue";
 
@@ -294,7 +302,7 @@ const getIcons = locale => [
   {
     key: "github",
     show: "Github",
-    link: "https://github.com/atnio"
+    link: "https://github.com/ATMatrix"
   },
   // {
   //   key: "telegram",
@@ -321,7 +329,7 @@ const getIcons = locale => [
 
 export default {
   components: {
-    Nav
+    Nav,
   },
   data() {
     return {
@@ -334,11 +342,20 @@ export default {
       telephone: "",
       message: "",
       qrShow: false,
+      zhFormId: '341c26d0-99e6-4014-b8f9-d0574b3ed144',
+      enFormId: '0cb790aa-cb23-4985-bb59-bf603f4dd7a9',
+      portalId: '4124422',
+      hs_context: JSON.stringify({
+          "redirectUrl": location.origin + '/thanks',    
+      }),
     };
   },
   computed: {
     common() {
       return this.$t("common");
+    },
+    locale () {
+      return this.$i18n.locale;
     },
     actionUrl() {
       const baseUrl =
@@ -347,6 +364,14 @@ export default {
       return `${baseUrl}${
         this.$i18n.locale === "zh" ? "65e18a5191" : "8aeeaa67e5"
       }`;
+    },
+    postUrl () {
+      const url = `https://forms.hubspot.com/uploads/form/v2/${ this.portalId }`;
+      const hs_context = {
+          "redirectUrl": location.host + '/thanks',    
+      }   
+      
+      return `${ url }/${ this.locale === 'en' ? this.enFormId : this.zhFormId}`;
     },
     solutions() {
       return this.$t("solutions");
@@ -382,11 +407,7 @@ export default {
       return getIcons(this.$i18n.locale);
     }
   },
-  mounted() {},
   methods: {
-    gotoContact() {
-      // TODOS: go to contact
-    },
     subscribeHandle() {
       if (!verifyMail(this.subscribeEmail)) {
         alert(this.$t("errMsg.notMail"));
@@ -394,8 +415,25 @@ export default {
       }
 
       this.$refs.form.submit();
+    },
+    _submit () {
+      this.$refs.contactForm.submit(e => this.onSubmit(e));
+    },
+    onSubmit(e) {
+      axios.post(this.postUrl, {
+        firstname: this.name,
+        email: this.email,
+        phone: this.telephone,
+        message: this.message
+      }, {
+        headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+      }).then(res => {
+        console.log(res)
+      }).catch(err => {
+        console.log(err)
+      })
     }
-  }
+  },
 };
 </script>
 

@@ -4,13 +4,14 @@ export default {
         ai: "AI"
     },
     errMsg: {
-        notMail: "Email is invalid !"
+        notMail: "Email is invalid !",
+        fillMsg: "Please complete the form information.",
     },
     nav: {
         Atmatrix: "Atmatrix",
         Solutions: "Solutions",
         Benefits: "Benefits",
-        Usecases: "Usecases",
+        Usecases: "Use cases",
         Team: "Team"
     },
     header: {
@@ -187,7 +188,7 @@ export default {
         contact: "Contact",
         form: "Us",
         name: "Name",
-        mail: "Mail",
+        mail: "Email",
         theme: "Phone",
         message: "For any enquiry, please leave your message here, we will contact you as soon as possible.",
         submit: "Submit"

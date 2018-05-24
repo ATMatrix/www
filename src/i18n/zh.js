@@ -4,7 +4,8 @@ export default {
         ai: "人工智能"
     },
     errMsg: {
-        notMail: "不是有效的邮箱!"
+        notMail: "不是有效的邮箱!",
+        fillMsg: "请将信息填写完整。",
     },
     nav: {
         Atmatrix: "Atmatrix",
