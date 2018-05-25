@@ -299,11 +299,11 @@ import ganzx from "@/assets/images/avatars/ganzx.png";
 import guxf from "@/assets/images/avatars/guxf.png";
 
 const getIcons = locale => [
-  {
-    key: "github",
-    show: "Github",
-    link: "https://github.com/ATMatrix"
-  },
+  // {
+  //   key: "github",
+  //   show: "Github",
+  //   link: "https://github.com/ATMatrix"
+  // },
   // {
   //   key: "telegram",
   //   show: "Telegram",
