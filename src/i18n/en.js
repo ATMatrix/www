@@ -81,7 +81,7 @@ export default {
                 title: "Financial Technology",
                 content: [
                     "Sending, receiving and verifying funds around the world is costly and time-consuming.",
-                    "Decentralized blockchain-based transactions allow near-instant processing as they do not rely on third parties to verify and transfer the funds. Interactions are also safer due to a cryptographically secure end-to-end payment flow and a trustless (not reliant on intermediaries) verification network.",
+                    "Decentralized blockchain-based transactions allow near-instant processing as they do not rely on third parties to verify and payment. Interactions are also safer due to a cryptographically secure end-to-end payment flow and a trustless (not reliant on intermediaries) verification network.",
                     "- Streamline payments processing with high efficiency, fast and secure transactions",
                     "- Automate KYC processing with intuitive smart contracts and immutable history",
                     "- Readily exchange global currencies with a highly liquid marketplace"
