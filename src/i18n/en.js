@@ -145,6 +145,18 @@ export default {
                 des: "Chief Architect in Big Data and Architect Intelligence business. As an old hand, he has completed several projects in fintech big data and AI industry. Formally worked in Tencent, specially in data mining and analysis. Master degree from SJTU, major in Artificial Intelligence."
             },
             {
+                key: "xfb",
+                name: "Dr. Fubiao, Xia",
+                position: "Chief Cryptologist",
+                des: "Dr. Xia started his academic career in software engineering at Fudan University, before pursuing a Master's in computer security followed by a PhD in computer science at the University of Birmingham, specializing in applied cryptography. He was previously responsible for various computer security and privacy-related development projects, including the security of healthcare and patient data at Philips Research China."
+            },
+            {
+                key: "ljd",
+                name: "Dr. Jinda, Lin",
+                position: "Chief AI Scientist",
+                des: "Dr. Lin started his academic career at Nanjing University and got his PhD at the Chinese Academy of Sciences, followed by post doctoral studies in physics at the University of East Carolina. His research focused on A.I. models and the application of A.I. to system control, biological imaging, and data analysis."
+            },
+            {
                 key: "csa",
                 name: "Denny Wang",
                 position: "Chief Software Architect",

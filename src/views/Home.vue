@@ -174,7 +174,10 @@
                 <img :src="avatars[p.key]" alt="">
               </div>
               <h3>{{ p.name }}</h3>
-              <div class="position" v-if="p.position">
+              <div
+                 class="position" 
+                 v-if="i === 0 || p.position"
+                 :style="{ visibility: i === 0 && !p.position ? 'hidden' : '' }">
                 <label>{{ p.position }}</label>
               </div>
               <p>{{ p.des }}</p>
@@ -292,11 +295,15 @@ import ceo from "@/assets/images/avatars/ceo.jpg";
 import cto from "@/assets/images/avatars/cto.jpg";
 import csa from "@/assets/images/avatars/csa.jpg";
 import ced from "@/assets/images/avatars/ced.jpg";
+import ljd from "@/assets/images/avatars/ljd.jpg";
+import xfb from "@/assets/images/avatars/xfb.jpg";
+
 import meinahong from "@/assets/images/avatars/meinahong.jpg";
 import zhupp from "@/assets/images/avatars/zhupp.jpg";
 import huang from "@/assets/images/avatars/huang.jpg";
 import ganzx from "@/assets/images/avatars/ganzx.png";
 import guxf from "@/assets/images/avatars/guxf.png";
+
 
 const getIcons = locale => [
   // {
@@ -335,7 +342,7 @@ export default {
     return {
       env: process.env.NODE_ENV,
       insets: { inset0, inset1, inset2, inset3, light1, light2 },
-      avatars: { ceo, cto, csa, ced, meinahong, zhupp, huang, ganzx, guxf },
+      avatars: { ceo, cto, csa, ced, ljd, xfb, meinahong, zhupp, huang, ganzx, guxf },
       subscribeEmail: "",
       name: "",
       email: "",
