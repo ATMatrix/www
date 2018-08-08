@@ -2,6 +2,7 @@ import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
 import VueI18n from "vue-i18n";
+import VueAnalytics from "vue-analytics";
 
 import "normalize.css";
 import "./assets/style/base.less";
@@ -14,6 +15,13 @@ const env = process.env.NODE_ENV;
 
 Vue.config.productionTip = env === "development" ? false : true;
 Vue.use(VueI18n);
+Vue.use(VueAnalytics, {
+  id: "UA-102089477-1",
+  router,
+  debug: {
+    enabled: false
+  }
+});
 
 // "en"、"en-US"、"fr"、"es-ES"、"zh-cn"、"zh-CN"
 const browserLanguage = (
